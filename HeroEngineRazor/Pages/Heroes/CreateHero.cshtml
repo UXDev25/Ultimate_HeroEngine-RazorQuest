@@ -1,0 +1,44 @@
+﻿@page
+@using Ultimate_HeroEngine.Core.Objects
+@using Ultimate_HeroEngine.Logic.ProgramEngine
+@model CreateHeroModel
+@{
+    ViewData["Title"] = "Create Hero";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DETAILS</title>
+</head>
+<body>
+<h1>Add new Hero</h1>
+@page
+@model CreateHeroModel
+
+<form method="post">
+    <div>
+        <label>Hero name:</label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label>Level:</label>
+        <input asp-for="Level" type="number" />
+    </div>
+
+    <div>
+        <label>Class:</label>
+        <select asp-for="SelectedHeroType">
+            <option value="Warrior">Warrior</option>
+            <option value="Mage">Mage</option>
+            <option value="Rogue">Rogue</option>
+        </select>
+    </div>
+
+    <button type="submit">Create Hero</button>
+</form>
+
+</body>
+</html>
