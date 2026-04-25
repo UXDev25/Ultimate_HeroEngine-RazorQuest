@@ -43,15 +43,17 @@ public abstract class Entity : IAttack, ITargetable
     public float DefenseBuff { get; set; }
     public bool IsDefeated { get => _isDefeated; }
 
+    public Entity() { }
+    
     public Entity(string name, int level, float maxHp, float skill, float defenseBuff)
     {
         Name = name;
         _level = 1;
-        Level = level;
         MaxHp = maxHp;
         Hp = maxHp;
         Skill = skill;
         DefenseBuff = defenseBuff;
+        Level = level;
     }
 
     public override string ToString() => String.Format(KeyValues.DefIntroduce, GetType().Name, Name, Level, Hp, MaxHp);
@@ -89,7 +91,7 @@ public abstract class Entity : IAttack, ITargetable
     public virtual void LevelUp()
     {
         Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
-        Level++;
+        _level++;
         MaxHp += KeyValues.DefHpIncrease;
         DefenseBuff += KeyValues.DefDefIncrease;
         Skill += KeyValues.DefSkillIncrease;

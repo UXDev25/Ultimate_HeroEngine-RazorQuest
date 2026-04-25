@@ -18,12 +18,13 @@ public class Warrior : Hero
         }
     }
 
+    public Warrior() { }
     public Warrior(string name, int level, float hp, float skill, float defenseBuff, List<Ability> abilities, int armor, string battleCry) : base(name, level, hp, skill, defenseBuff, abilities)
     {
         Armor = armor;
         BattleCry = battleCry;
     }
-    public Warrior(string name, int level, string battleCry) : this(name, level, KeyValues.DefWarriorHp, KeyValues.DefWarriorSkill, KeyValues.DefDefense, new List<Ability>(), KeyValues.DefWarriorArmor, battleCry) { }
+    public Warrior(string name, int level) : this(name, level, KeyValues.DefWarriorHp, KeyValues.DefWarriorSkill, KeyValues.DefDefense, new List<Ability>(), KeyValues.DefWarriorArmor, KeyValues.MichaelCry) { }
     
     public override string ToString()
     {

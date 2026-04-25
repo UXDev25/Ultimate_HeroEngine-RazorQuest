@@ -7,6 +7,7 @@ namespace Ultimate_HeroEngine.Hierarchy.Abilities;
 
 public class Healing : Ability
 {
+    public Healing() { }
     public Healing(string name, int cost, ERarity rarity, int power, ETarget targetType, Entity? user, EClasses classType) : base(name, cost, rarity, power, targetType, user, classType) { }
     
     public override void Execute (Entity? target)

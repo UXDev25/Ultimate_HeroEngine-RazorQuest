@@ -10,9 +10,8 @@ public class HeroDetailModel : PageModel
 {
     public Hero? ActualHero { get; set; }
     
-    public void OnGet(string heroName)
+    public void OnGet(string id)
     {
-        if (ActualHero == null) return;
-        ActualHero = (Hero)MenuManager.ActualCombat.HeroTeam.Members.Find(hero => hero.Name == heroName);
+        ActualHero = (Hero)HeroStorage.HeroTeamList.Members.Find(hero => hero.Name == id);
     }
 }

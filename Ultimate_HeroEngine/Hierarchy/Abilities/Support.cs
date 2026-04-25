@@ -9,6 +9,7 @@ public class Support : Ability
 {
     public EEffect Effect { get; set; }
 
+    public Support() { }
     public Support(string name, int cost, ERarity rarity, int power, ETarget targetType, Entity? user, EEffect effect, EClasses classType) : base(name, cost, rarity, power, targetType, user, classType)
     {
         Effect = effect;

@@ -10,13 +10,13 @@
     <h1 class="display-4">Ultimate Hero Engine: RazorQuest</h1>
 <div>
     <br/><br/><br/><br/><br/>
-    @if (Model.ActualCombatEngine == null || Model.ActualHeroTeam.Members.Count == 0)
+    @if (Model.ActualHeroTeam.Members.Count == 0)
     {
-        <h3>Start a combat to load your heroes!</h3>
+        <h3>You dont have any heroes on your team yet</h3>
     }
     else
     {
-        <h2>Loaded Heroes: @MenuManager.ActualCombat.HeroTeam.Members.Count</h2>
+        <h2>Loaded Heroes: @Model.ActualHeroTeam.Members.Count</h2>
         <table>
             <thead>
             <tr>
@@ -27,7 +27,7 @@
             </tr>
             </thead>
             <tbody>
-            @foreach (var hero in MenuManager.ActualCombat.HeroTeam.Members)
+            @foreach (var hero in HeroStorage.HeroTeamList.Members)
             {
                 <tr>
                     <td>@hero.GetType().Name</td>
@@ -40,6 +40,7 @@
             </tbody>
         </table>
     }
+    <a asp-page="./CreateHero" class="btn btn-primary">Create Hero</a>
 </div>
 
 </body>

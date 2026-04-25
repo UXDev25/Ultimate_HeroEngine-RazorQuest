@@ -30,7 +30,7 @@ public static class MenuManager
     public static void CombatFlow(CombatEngine battle)
     {
         ActualCombat = battle;
-        battle.HeroTeam = new Team(DefaultEntities.Heroes.Cast<Entity>().ToList());
+        battle.HeroTeam = HeroStorage.HeroTeamList;
         bool isBossFight = false;
         bool isGameOver = false;
         int i = 1;

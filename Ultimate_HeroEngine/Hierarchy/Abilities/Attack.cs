@@ -6,7 +6,8 @@ using Ultimate_HeroEngine.Entities;
 namespace Ultimate_HeroEngine.Abilities;
 
 public class Attack : Ability, IAttack
-{
+{ 
+    public Attack() { }
     public Attack(string name, int cost, ERarity rarity, int power, ETarget targetType, Entity? user, EClasses classType) : base(name, cost, rarity, power, targetType, user,classType) { }
     
     public void AttackMeth(Entity? target)

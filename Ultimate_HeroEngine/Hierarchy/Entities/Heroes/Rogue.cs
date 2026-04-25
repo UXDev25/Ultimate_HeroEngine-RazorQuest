@@ -17,6 +17,7 @@ public class Rogue : Hero
         } 
     }
 
+    public Rogue() { }
     public Rogue(string name, int level, float hp, float skill, float defenseBuff, List<Ability> abilities, float dmgMult, int hiddenDaggers) : base(name, level, hp, skill, defenseBuff, abilities)
     {
         DmgMult = dmgMult;

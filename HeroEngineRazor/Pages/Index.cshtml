@@ -1,5 +1,6 @@
 ﻿@page
 @using Ultimate_HeroEngine.Core.Objects
+@using Ultimate_HeroEngine.Logic.ProgramEngine
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -9,25 +10,33 @@
     <h1 class="display-4">Ultimate Hero Engine: RazorQuest</h1>
     <div>
         <br/><br/><br/><br/><br/>
-        <h2>Registered Heroes: @DefaultEntities.Heroes.Count</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Class</th>
-                <th>Name</th>
-                <th>Base HP</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach (var hero in DefaultEntities.Heroes)
+        
+            @if (HeroStorage.HeroTeamList.Members.Count == 0)
             {
-                <tr>
-                    <td>@hero.GetType().Name</td>
-                    <td>@hero.Name</td>
-                    <td>@hero.MaxHp</td>
-                </tr>    
+                <h2>There are no registered heroes</h2>
             }
-            </tbody>
-        </table>
+            else
+            {
+                <h2>Registered Heroes: @HeroStorage.HeroTeamList.Members.Count</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Name</th>
+                        <th>Base HP</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                @foreach (var hero in HeroStorage.HeroTeamList.Members)
+                {
+                    <tr>
+                        <td>@hero.GetType().Name</td>
+                        <td>@hero.Name</td>
+                        <td>@hero.MaxHp</td>
+                    </tr>
+                }
+                </tbody>
+                </table>
+            }
     </div>
 </div>

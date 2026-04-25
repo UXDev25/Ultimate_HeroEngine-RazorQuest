@@ -1,22 +1,26 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Files.Data;
 using Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
 using Ultimate_HeroEngine.Logic.ProgramEngine;
 
-namespace HeroEngineRazor.Pages;
+namespace HeroEngineRazor.Pages.Heroes;
 
 public class CreateHeroModel : PageModel
 {
     [BindProperty]
+    [Required(ErrorMessage =  "Name is required")]
+    [StringLength(20, MinimumLength = 3, ErrorMessage = "El nom ha de tenir entre 3 i 20 caràcters.")]
     public string Name { get; set; }
     
     [BindProperty]
+    [Required(ErrorMessage =  "Level is required")]
     public int Level { get; set; }
-    
-    public string WarriorCry { get; set; }
 
     [BindProperty]
+    [Required(ErrorMessage = "Please choose a class")]
     public string SelectedHeroType { get; set; }
 
     public void OnGet() { }
@@ -27,11 +31,10 @@ public class CreateHeroModel : PageModel
 
         Hero newHero;
 
-        // Lògica per crear la instància correcta segons la selecció
         switch (SelectedHeroType)
         {
             case "Warrior":
-                newHero = new Warrior(Name, Level, WarriorCry);
+                newHero = new Warrior(Name, Level);
                 break;
             case "Mage":
                 newHero = new Mage(Name, Level);
@@ -43,8 +46,8 @@ public class CreateHeroModel : PageModel
                 return Page();
         }
 
-        MenuManager.ActualCombat.HeroTeam.Members.Add(newHero);
+        HeroRepository.Add(newHero);
 
-        return RedirectToPage("./Index");
+        return RedirectToPage("./Heroes");
     }
 }

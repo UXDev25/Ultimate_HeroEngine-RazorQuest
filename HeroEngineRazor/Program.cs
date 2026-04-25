@@ -5,6 +5,12 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+var loadedHeroes = Ultimate_HeroEngine.Files.Data.HeroRepository.LoadAll();
+foreach (var hero in loadedHeroes)
+{
+    Ultimate_HeroEngine.Logic.ProgramEngine.HeroStorage.HeroTeamList.Members.Add(hero);
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

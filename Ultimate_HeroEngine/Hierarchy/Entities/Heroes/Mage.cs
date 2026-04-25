@@ -16,6 +16,7 @@ public class Mage : Hero
             Mana = value;
         }
     }
+    public Mage() { }
 
     public Mage(string name, int level, float hp, float skill, float defenseBuff , List<Ability> abilities , int mana, int arkLvl) : base(name, level, hp, skill, defenseBuff, abilities)
     {

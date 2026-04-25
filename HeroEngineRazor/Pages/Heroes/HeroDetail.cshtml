@@ -30,7 +30,7 @@ else
                 <ul>
                     @foreach (var ability in Model.ActualHero.Abilities)
                     {
-                        <li>[@ability.Rarity] @ability.Name: target to @ability.TargetType, power: @ability.Power, type: @ability.ClassType</li>
+                        <li>[@ability.Rarity] @ability.Name: target to @ability.TargetType, power: @ability.Power, type: @ability.GetType().Name</li>
                     }
                 </ul>
             </li>
