@@ -1,6 +1,7 @@
 ﻿using Ultimate_HeroEngine.Abilities;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Hierarchy.Entities.Enemies;
 using Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
 
 namespace Ultimate_HeroEngine.Core.Objects;
@@ -68,7 +69,7 @@ namespace Ultimate_HeroEngine.Core.Objects;
 
             foreach (var enemy in randomEnemies)
             {
-                enemy.Level += rand.Next(aproxLevel, KeyValues.RandomLevelRange);
+                enemy.Level += rand.Next(aproxLevel, aproxLevel + KeyValues.RandomLevelRange);
                 if (enemy is IUseAbility notMinion) notMinion.AssignAbilitiesToUser();
             }
 

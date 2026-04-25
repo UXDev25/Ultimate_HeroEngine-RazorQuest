@@ -12,11 +12,12 @@ public class CreateHeroModel : PageModel
 {
     [BindProperty]
     [Required(ErrorMessage =  "Name is required")]
-    [StringLength(20, MinimumLength = 3, ErrorMessage = "El nom ha de tenir entre 3 i 20 caràcters.")]
+    [StringLength(20, MinimumLength = 3, ErrorMessage = "Name has to have between 3 and 20 characters")]
     public string Name { get; set; }
     
     [BindProperty]
     [Required(ErrorMessage =  "Level is required")]
+    [Range(1, 100, ErrorMessage = "Level has to be between 1 and 100")]
     public int Level { get; set; }
 
     [BindProperty]

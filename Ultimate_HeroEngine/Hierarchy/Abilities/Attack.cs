@@ -2,6 +2,7 @@
 using Ultimate_HeroEngine.Core.Enums;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Abilities;
 
@@ -12,7 +13,7 @@ public class Attack : Ability, IAttack
     
     public void AttackMeth(Entity? target)
     {
-        Console.WriteLine(Messages.Attack,User!.GetType().Name, User.Name, target!.GetType().Name, target.Name);
+        LiveLog.Log(String.Format(Messages.Attack,User!.GetType().Name, User.Name, target!.GetType().Name, target.Name));
         target.ReceiveDamage(User.Skill * KeyValues.DefPower);
     }
 

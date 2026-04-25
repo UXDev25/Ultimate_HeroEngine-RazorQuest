@@ -4,6 +4,7 @@ using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Core.Objects;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
 
@@ -28,10 +29,10 @@ public abstract class Hero : Entity, IUseAbility, IComparable<Hero>
     //**Abilities**
     public void UseAbility(int abilityIndex, ITargetable? target)
     {
-        if (target is Entity ent) Console.WriteLine(Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name);
+        if (target is Entity ent) LiveLog.Log(String.Format(Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name));
         if (target is Team team)
         {
-            Console.WriteLine(Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name);
+            LiveLog.Log(String.Format(Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name));
             foreach (var member in team.Members)
             {
                 Abilities[abilityIndex].Execute(member);

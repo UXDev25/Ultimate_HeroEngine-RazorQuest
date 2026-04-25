@@ -2,6 +2,7 @@
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Entities;
 
@@ -30,13 +31,13 @@ public class Rogue : Hero
     
     public override void AttackMeth(Entity? target)
     {
-        Console.WriteLine(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name);
+        LiveLog.Log(String.Format(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
         target.ReceiveDamage(Skill * KeyValues.DefPower * DmgMult);
     }
     
     public override void LevelUp()
     {
-        Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
+        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
         base.LevelUp();
         DmgMult += KeyValues.DefMultIncrease;
         HiddenDaggers += KeyValues.DefDaggersIncrease;

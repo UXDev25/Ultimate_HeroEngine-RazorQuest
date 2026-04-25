@@ -1,6 +1,7 @@
 ﻿using Ultimate_HeroEngine.Abilities;
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Entities;
 
@@ -30,7 +31,7 @@ public class Mage : Hero
     
     public override void LevelUp()
     {
-        Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
+        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
         base.LevelUp();
         Mana += KeyValues.DefManaIncrease;
         ArkLvl += KeyValues.DefArkLvlIncrease;

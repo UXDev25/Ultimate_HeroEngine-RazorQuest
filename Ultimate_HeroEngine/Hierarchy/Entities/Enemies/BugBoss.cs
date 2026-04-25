@@ -2,9 +2,10 @@
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Core.Objects;
-using Ultimate_HeroEngine.Hierarchy;
+using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
-namespace Ultimate_HeroEngine.Entities;
+namespace Ultimate_HeroEngine.Hierarchy.Entities.Enemies;
 
 public class BugBoss : Enemy, IUseAbility
 {
@@ -36,22 +37,26 @@ public class BugBoss : Enemy, IUseAbility
         float actualDamage = damage - (1 + (DefenseBuff / 10)) - (DefenseBuff / 10) * (Armor / 100);
         actualDamage = Math.Max(KeyValues.MinDefaultDamage, actualDamage);
         Hp -= actualDamage;
-        Console.WriteLine(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp);
+        
+        LiveLog.Log(String.Format(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
 
     public override void AttackMeth(Entity? target)
     {
-        Console.WriteLine(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name);
+        LiveLog.Log(String.Format(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
+        
         target.ReceiveDamage(Skill * KeyValues.DefBossPow * DmgMult);
     }
     
     //**Abilities
     public void UseAbility(int abilityIndex, ITargetable? target)
     {
-        if (target is Entity ent) Console.WriteLine(Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name);
+        if (target is Entity ent) LiveLog.Log(String.Format(Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name));
+        
         if (target is Team team)
         {
-            Console.WriteLine(Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name);
+            LiveLog.Log(String.Format(Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name));
+            
             foreach (var member in team.Members)
             {
                 Abilities[abilityIndex].Execute(member);
@@ -72,5 +77,4 @@ public class BugBoss : Enemy, IUseAbility
         Armor += KeyValues.DefArmorIncrease;
         DmgMult += KeyValues.DefMultIncrease;
     }
-    
 }

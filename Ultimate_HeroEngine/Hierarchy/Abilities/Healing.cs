@@ -2,6 +2,7 @@
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Enums;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Hierarchy.Abilities;
 
@@ -14,7 +15,7 @@ public class Healing : Ability
     {
         
         float finalHp = target!.Hp >= target.MaxHp ? target.Hp : target.Hp + Power * User!.Skill / 1.5f;
-        Console.WriteLine(Messages.Heal, target.Name, finalHp - target.Hp);
+        LiveLog.Log(String.Format(Messages.Heal, target.Name, finalHp - target.Hp));
         target.Hp = finalHp;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Ultimate_HeroEngine.Abilities;
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Entities;
 
@@ -36,12 +37,12 @@ public class Warrior : Hero
         float actualDamage = damage - (1 + (DefenseBuff / 10)) - (DefenseBuff / 10) * (Armor / 100);
         actualDamage = Math.Max(KeyValues.MinDefaultDamage, actualDamage);
         Hp -= actualDamage;
-        Console.WriteLine(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp);
+        LiveLog.Log(String.Format(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
     
     public override void LevelUp()
     {
-        Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
+        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
         base.LevelUp();
         Armor += KeyValues.DefArmorIncrease;
     }

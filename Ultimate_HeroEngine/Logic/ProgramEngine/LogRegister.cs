@@ -1,40 +1,68 @@
-﻿namespace Ultimate_HeroEngine.Logic.ProgramEngine;
+﻿using Ultimate_HeroEngine.Hierarchy;
+
+namespace Ultimate_HeroEngine.Logic.ProgramEngine;
 
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 public static class LogRegister
 {
     public static List<String> ActionData { get; set; } = new List<String>();
+    private const string SessionSeparator = "=====DONT DELETE THIS SEPARATOR=====";
+    private static readonly string FilePath = Path.Combine(Directory.GetCurrentDirectory(), "Files", "BattleLogs.txt");
 
-    /// <summary>
-    /// Appends a log message to the end of the 'BattleLogs.txt' file. 
-    /// If the target directory or file does not exist at the specified path, they are created automatically.
-    /// </summary>
-    /// <param name="logMessage">The complete text message to be appended and registered in the file.</param>
-    public static void RegisterLog(string logMessage)
+    public static void SaveCombatSession(Team heroes, Team enemies, string finalResult)
     {
-        string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
+        EnsureDirectoryExists();
 
-        string filePath = Path.GetFullPath(Path.Combine(directoryPath, @"..\..\..\Files\BattleLogs.txt"));
+        var lines = new List<string>();
+        
+        lines.Add("==================================================");
+        lines.Add($"COMBAT DATE: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
+        
+        string heroNames = string.Join(", ", heroes.Members.Select(h => h.Name));
+        string enemyNames = string.Join(", ", enemies.Members.Select(e => e.Name));
+        
+        lines.Add($"HEROES: {heroNames}");
+        lines.Add($"ENEMIES: {enemyNames}");
+        lines.Add("--------------------------------------------------");
+        
+        lines.AddRange(ActionData);
+        
+        lines.Add("--------------------------------------------------");
+        lines.Add($"RESULT: {finalResult}");
+        lines.Add("\n"); 
 
-        string? targetDirectory = Path.GetDirectoryName(filePath);
-        if (!Directory.Exists(targetDirectory))
-        {
-            Directory.CreateDirectory(targetDirectory!);
-        }
-        string finalLine = $"{logMessage}\n";
-        File.AppendAllText(filePath, finalLine);
+        File.AppendAllLines(FilePath, lines);
+
+        ActionData.Clear();
     }
 
-    /// <summary>
-    /// Iterates through a list of text strings and inserts all of them, 
-    /// one by one, into the log file.
-    /// </summary>
-    /// <param name="actionData">The list of text strings (action data) to be dumped into the file.</param>
-    public static void InsertActionData(List<String> actionData)
+    public static List<string> GetLastCombatLog()
     {
-        actionData.ForEach(data => RegisterLog(data));
+        if (!File.Exists(FilePath)) 
+            return new List<string> { "There is no registered combat yet." };
+
+        string fullText = File.ReadAllText(FilePath);
+        
+        string[] allCombats = fullText.Split(new[] { SessionSeparator }, StringSplitOptions.RemoveEmptyEntries);
+        
+        if (allCombats.Length == 0) 
+            return new List<string> { "Historial is empty." };
+
+        string lastCombat = allCombats.Last();
+
+        return lastCombat.Trim().Split('\n').Select(line => line.TrimEnd('\r')).ToList();
+    }
+
+    private static void EnsureDirectoryExists()
+    {
+        string? directory = Path.GetDirectoryName(FilePath);
+        if (!Directory.Exists(directory))
+        {
+            Directory.CreateDirectory(directory!);
+        }
     }
 }

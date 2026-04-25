@@ -65,7 +65,7 @@ public abstract class Entity : IAttack, ITargetable
     /// <param name="target">The entity that will receive the attack.</param>
     public virtual void AttackMeth(Entity? target)
     {
-        Console.WriteLine(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name);
+        LiveLog.Log(String.Format(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
         target.ReceiveDamage(Skill * KeyValues.DefPower);
     }
 
@@ -81,7 +81,7 @@ public abstract class Entity : IAttack, ITargetable
         StatCalculator.LastDamagePoint = actualDamage;
         StatCalculator.AllCombatDamage += StatCalculator.LastDamagePoint;
         Hp -= actualDamage;
-        Console.WriteLine(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp);
+        LiveLog.Log(String.Format(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
 
     /// <summary>
@@ -90,7 +90,7 @@ public abstract class Entity : IAttack, ITargetable
     /// </summary>
     public virtual void LevelUp()
     {
-        Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
+        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
         _level++;
         MaxHp += KeyValues.DefHpIncrease;
         DefenseBuff += KeyValues.DefDefIncrease;
@@ -109,7 +109,7 @@ public abstract class Entity : IAttack, ITargetable
     /// </summary>
     public virtual void Defeated()
     {
-        Console.WriteLine(Messages.DefeatMsg, GetType().Name, Name);
+        LiveLog.Log(String.Format(Messages.DefeatMsg, GetType().Name, Name));
         _hp = 0;
     }
 

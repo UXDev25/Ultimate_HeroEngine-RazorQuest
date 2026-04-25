@@ -2,6 +2,7 @@
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Enums;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Hierarchy.Abilities;
 
@@ -12,7 +13,7 @@ public class Defense : Ability
 
     public override void Execute(Entity? target)
     {
-        Console.WriteLine(Messages.BuffDefense, User!.Name);
+        LiveLog.Log(String.Format(Messages.BuffDefense, User!.Name));
         target!.DefenseBuff += Power * User.Skill / 1.5f;
     }
 }

@@ -7,12 +7,21 @@
     "KillCount": 0,
     "Abilities": [
       {
-        "type": "Healing",
-        "Name": "Healing Rain",
+        "type": "Attack",
+        "Name": "Meteor Swarm",
+        "Cost": 5,
+        "Rarity": 3,
+        "Power": 120,
+        "TargetType": 5,
+        "ClassType": 1
+      },
+      {
+        "type": "Defense",
+        "Name": "Magic Barrier",
         "Cost": 5,
         "Rarity": 1,
         "Power": 35,
-        "TargetType": 4,
+        "TargetType": 1,
         "ClassType": 1
       },
       {
@@ -25,21 +34,12 @@
         "ClassType": 1
       },
       {
-        "type": "Healing",
-        "Name": "Miracle",
+        "type": "Attack",
+        "Name": "Meteor Swarm",
         "Cost": 5,
         "Rarity": 3,
-        "Power": 999,
-        "TargetType": 6,
-        "ClassType": 1
-      },
-      {
-        "type": "Healing",
-        "Name": "Divine Light",
-        "Cost": 5,
-        "Rarity": 3,
-        "Power": 150,
-        "TargetType": 4,
+        "Power": 120,
+        "TargetType": 5,
         "ClassType": 1
       }
     ],
@@ -49,6 +49,58 @@
     "MaxHp": 1227,
     "Skill": 246,
     "DefenseBuff": 152,
+    "IsDefeated": false
+  },
+  {
+    "type": "Rogue",
+    "DmgMult": 1.5,
+    "HiddenDaggers": 10,
+    "CostStat": 10,
+    "KillCount": 0,
+    "Abilities": [
+      {
+        "type": "Healing",
+        "Name": "Basic Bandages",
+        "Cost": 5,
+        "Rarity": 0,
+        "Power": 20,
+        "TargetType": 1,
+        "ClassType": 2
+      },
+      {
+        "type": "Healing",
+        "Name": "Basic Bandages",
+        "Cost": 5,
+        "Rarity": 0,
+        "Power": 20,
+        "TargetType": 1,
+        "ClassType": 2
+      },
+      {
+        "type": "Attack",
+        "Name": "Assassin\u0027s Strike",
+        "Cost": 5,
+        "Rarity": 2,
+        "Power": 80,
+        "TargetType": 2,
+        "ClassType": 2
+      },
+      {
+        "type": "Healing",
+        "Name": "Herbal Brew",
+        "Cost": 5,
+        "Rarity": 0,
+        "Power": 20,
+        "TargetType": 1,
+        "ClassType": 2
+      }
+    ],
+    "Name": "456",
+    "Level": 9,
+    "Hp": 80,
+    "MaxHp": 172,
+    "Skill": 32,
+    "DefenseBuff": 17,
     "IsDefeated": false
   },
   {
@@ -70,40 +122,39 @@
       {
         "type": "Support",
         "Effect": 2,
-        "Name": "Blood Pact",
+        "Name": "Ultimate Sacrifice",
         "Cost": 0,
         "Rarity": 3,
         "Power": 120,
-        "TargetType": 3,
-        "ClassType": 0
-      },
-      {
-        "type": "Support",
-        "Effect": 2,
-        "Name": "Blood Pact",
-        "Cost": 0,
-        "Rarity": 3,
-        "Power": 120,
-        "TargetType": 3,
+        "TargetType": 4,
         "ClassType": 0
       },
       {
         "type": "Support",
         "Effect": 3,
-        "Name": "Doomsday Prophecy",
+        "Name": "History Lesson",
         "Cost": 5,
-        "Rarity": 3,
-        "Power": 120,
+        "Rarity": 2,
+        "Power": 80,
         "TargetType": 6,
+        "ClassType": 0
+      },
+      {
+        "type": "Defense",
+        "Name": "Wooden Shield",
+        "Cost": 5,
+        "Rarity": 0,
+        "Power": 20,
+        "TargetType": 1,
         "ClassType": 0
       }
     ],
-    "Name": "Michael",
-    "Level": 1,
+    "Name": "4564587",
+    "Level": 17,
     "Hp": 150,
-    "MaxHp": 150,
-    "Skill": 5,
-    "DefenseBuff": 5,
+    "MaxHp": 334,
+    "Skill": 45,
+    "DefenseBuff": 29,
     "IsDefeated": false
   }
 ]

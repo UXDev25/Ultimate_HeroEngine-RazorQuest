@@ -15,10 +15,8 @@ public static class MenuManager
     /// </summary>
     public static void PresentProgram()
     {
-        Console.WriteLine(UI.GenDivider, UI.Title);
-        Console.WriteLine(UI.Team);
-        UiManager.ContinueAsk();
-        Console.Clear();
+        LiveLog.Log(String.Format(UI.GenDivider, UI.Title));
+        LiveLog.Log(UI.Team);
     }
 
     /// <summary>
@@ -27,23 +25,31 @@ public static class MenuManager
     /// resets combat stats, and fully restores the heroes' health before starting each new battle.
     /// </summary>
     /// <param name="battle">The core combat engine instance that will execute and manage the battles.</param>
-    public static void CombatFlow(CombatEngine battle)
+    public static bool CombatFlow(CombatEngine battle)
     {
-        ActualCombat = battle;
-        battle.HeroTeam = HeroStorage.HeroTeamList;
-        bool isBossFight = false;
-        bool isGameOver = false;
-        int i = 1;
-        int auxI = 0;
-        while (!isGameOver)
+        try
         {
-            battle.EnemyTeam = new Team(DefaultEntities.GetRandomEnemies(isBossFight, battle.HeroTeam.Members[0].Level).Cast<Entity>().ToList());
-            i++;
-            isBossFight = i - auxI == 3;
-            if (isBossFight) auxI = i;
-            battle.RestartStats();
-            battle.HeroTeam.Members.ForEach(member => member.Hp = member.MaxHp);
-            isGameOver = battle.StartBattle();
+            ActualCombat = battle;
+            battle.HeroTeam = HeroStorage.HeroTeamList;
+            bool isBossFight = false;
+            bool isGameOver = false;
+            int i = 1;
+            int auxI = 0;
+            while (!isGameOver)
+            {
+                battle.EnemyTeam = new Team(DefaultEntities.GetRandomEnemies(isBossFight, battle.HeroTeam.Members[0].Level).Cast<Entity>().ToList());
+                i++;
+                isBossFight = i - auxI == 3;
+                if (isBossFight) auxI = i;
+                battle.RestartStats();
+                battle.HeroTeam.Members.ForEach(member => member.Hp = member.MaxHp);
+                isGameOver = battle.StartBattle();
+            }
         }
+        catch (ArgumentOutOfRangeException)
+        {
+            return false;
+        }
+        return true;
     }
 }

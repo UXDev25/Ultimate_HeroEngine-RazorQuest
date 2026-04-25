@@ -2,6 +2,7 @@
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Enums;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Hierarchy.Abilities;
 
@@ -20,17 +21,17 @@ public class Support : Ability
         switch (Effect)
         {
             case EEffect.Cheer: 
-                Console.WriteLine(Messages.Cheer, target!.Name);
+                LiveLog.Log(String.Format(Messages.Cheer, target!.Name));
                 break;
             case EEffect.InstaKill:
-                Console.WriteLine(Messages.InstaKill, target!.Name);
+                LiveLog.Log(String.Format(Messages.InstaKill, target!.Name));
                 target.Hp = 0;
                 break;
             case EEffect.TellFacts:
-                Console.WriteLine(Messages.Fact);
+                LiveLog.Log(Messages.Fact);
                 break;
             default: 
-                Console.WriteLine(Messages.Nothing);
+                LiveLog.Log(Messages.Nothing);
                 break;
         }
     }
