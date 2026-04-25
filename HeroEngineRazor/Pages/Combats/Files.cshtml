@@ -1,0 +1,184 @@
+﻿@page
+@model FilesModel
+@{
+    ViewData["Title"] = "Data storage";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Estadístiques de Combat</h1>
+        <a asp-page-handler="Download" class="btn btn-success">Descarregar CSV</a>
+    </div>
+
+    @if (Model.LastMatches.Count == 0)
+    {
+        <div class="alert alert-info">Encara no hi ha dades registrades.</div>
+    }
+    else
+    {
+        <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Result</th>
+                <th>Rounds</th>
+                <th>Total Damage</th>
+                <th>MVP</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var match in Model.LastMatches)
+            {
+                <tr>
+                    <td>@match.Date.ToString("dd/MM HH:mm")</td>
+                    <td>
+                        <span class="badge @(match.Result == "Victory" ? "bg-success" : "bg-danger")">
+                            @match.Result
+                        </span>
+                    </td>
+                    <td>@match.TotalRounds</td>
+                    <td>@match.TotalDamage.ToString("N0")</td>
+                    <td>@match.EffectiveHero</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        
+        <div class="container mt-4">
+
+    <hr class="my-5" style="border-color: #555;" />
+
+    <h2>Configuració del Motor de Joc (XML)</h2>
+    <p class="text-muted">Modifica els valors base del joc. Aquests canvis s'aplicaran immediatament a les properes batalles.</p>
+
+    <form method="post" asp-page-handler="UpdateConfig">
+        
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-header border-secondary">Estadístiques Base</div>
+                    <div class="card-body">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Warrior Base HP:</label>
+                            <input asp-for="CurrentConfig.KeyValues.DefWarriorHp" class="form-control bg-secondary text-white border-0" type="number" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Elite Base HP:</label>
+                            <input asp-for="CurrentConfig.KeyValues.DefEliteHp" class="form-control bg-secondary text-white border-0" type="number" />
+                        </div>
+                        
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-header border-secondary">Missatges del Joc</div>
+                    <div class="card-body">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Missatge de Victòria Heroica:</label>
+                            <input asp-for="CurrentConfig.Messages.HeroWin" class="form-control bg-secondary text-white border-0" type="text" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-warning mt-3">Desar Configuració a XML</button>
+    </form>
+</div>
+    }
+    <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Combat Statistics</h1>
+        <a asp-page-handler="Download" class="btn btn-success">Download CSV</a>
+    </div>
+
+    @if (Model.LastMatches.Count == 0)
+    {
+        <div class="alert alert-info">No data registered yet.</div>
+    }
+    else
+    {
+        <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Result</th>
+                <th>Rounds</th>
+                <th>Total Damage</th>
+                <th>MVP</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var match in Model.LastMatches)
+            {
+                <tr>
+                    <td>@match.Date.ToString("dd/MM HH:mm")</td>
+                    <td>
+                        <span class="badge @(match.Result == "Victory" ? "bg-success" : "bg-danger")">
+                            @match.Result
+                        </span>
+                    </td>
+                    <td>@match.TotalRounds</td>
+                    <td>@match.TotalDamage.ToString("N0")</td>
+                    <td>@match.EffectiveHero</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        
+        <div class="container mt-4">
+
+    <hr class="my-5" style="border-color: #555;" />
+
+    <h2>Game Engine Configuration (XML)</h2>
+    <p class="text-muted">Modify the game's base values. These changes will be applied immediately to the next battles.</p>
+
+    <form method="post" asp-page-handler="UpdateConfig">
+        
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-header border-secondary">Base Statistics</div>
+                    <div class="card-body">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Warrior Base HP:</label>
+                            <input asp-for="CurrentConfig.KeyValues.DefWarriorHp" class="form-control bg-secondary text-white border-0" type="number" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Elite Base HP:</label>
+                            <input asp-for="CurrentConfig.KeyValues.DefEliteHp" class="form-control bg-secondary text-white border-0" type="number" />
+                        </div>
+                        
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-header border-secondary">Game Messages</div>
+                    <div class="card-body">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Hero Victory Message:</label>
+                            <input asp-for="CurrentConfig.Messages.HeroWin" class="form-control bg-secondary text-white border-0" type="text" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-warning mt-3">Save Configuration to XML</button>
+    </form>
+</div>
+    }
+</div>
+</div>

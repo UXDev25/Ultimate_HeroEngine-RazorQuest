@@ -1,109 +1,5 @@
 [
   {
-    "type": "Mage",
-    "Mana": 15,
-    "ArkLvl": 1,
-    "CostStat": 15,
-    "KillCount": 0,
-    "Abilities": [
-      {
-        "type": "Attack",
-        "Name": "Meteor Swarm",
-        "Cost": 5,
-        "Rarity": 3,
-        "Power": 120,
-        "TargetType": 5,
-        "ClassType": 1
-      },
-      {
-        "type": "Defense",
-        "Name": "Magic Barrier",
-        "Cost": 5,
-        "Rarity": 1,
-        "Power": 35,
-        "TargetType": 1,
-        "ClassType": 1
-      },
-      {
-        "type": "Healing",
-        "Name": "Divine Light",
-        "Cost": 5,
-        "Rarity": 3,
-        "Power": 150,
-        "TargetType": 4,
-        "ClassType": 1
-      },
-      {
-        "type": "Attack",
-        "Name": "Meteor Swarm",
-        "Cost": 5,
-        "Rarity": 3,
-        "Power": 120,
-        "TargetType": 5,
-        "ClassType": 1
-      }
-    ],
-    "Name": "Balatro",
-    "Level": 99,
-    "Hp": 100,
-    "MaxHp": 1227,
-    "Skill": 246,
-    "DefenseBuff": 152,
-    "IsDefeated": false
-  },
-  {
-    "type": "Rogue",
-    "DmgMult": 1.5,
-    "HiddenDaggers": 10,
-    "CostStat": 10,
-    "KillCount": 0,
-    "Abilities": [
-      {
-        "type": "Healing",
-        "Name": "Basic Bandages",
-        "Cost": 5,
-        "Rarity": 0,
-        "Power": 20,
-        "TargetType": 1,
-        "ClassType": 2
-      },
-      {
-        "type": "Healing",
-        "Name": "Basic Bandages",
-        "Cost": 5,
-        "Rarity": 0,
-        "Power": 20,
-        "TargetType": 1,
-        "ClassType": 2
-      },
-      {
-        "type": "Attack",
-        "Name": "Assassin\u0027s Strike",
-        "Cost": 5,
-        "Rarity": 2,
-        "Power": 80,
-        "TargetType": 2,
-        "ClassType": 2
-      },
-      {
-        "type": "Healing",
-        "Name": "Herbal Brew",
-        "Cost": 5,
-        "Rarity": 0,
-        "Power": 20,
-        "TargetType": 1,
-        "ClassType": 2
-      }
-    ],
-    "Name": "456",
-    "Level": 9,
-    "Hp": 80,
-    "MaxHp": 172,
-    "Skill": 32,
-    "DefenseBuff": 17,
-    "IsDefeated": false
-  },
-  {
     "type": "Warrior",
     "Armor": 10,
     "BattleCry": "For pain and for glory! Bytecroft will not sucumb against bugs!",
@@ -121,40 +17,40 @@
       },
       {
         "type": "Support",
-        "Effect": 2,
-        "Name": "Ultimate Sacrifice",
-        "Cost": 0,
-        "Rarity": 3,
-        "Power": 120,
+        "Effect": 1,
+        "Name": "Motivational Speech",
+        "Cost": 5,
+        "Rarity": 2,
+        "Power": 80,
+        "TargetType": 4,
+        "ClassType": 0
+      },
+      {
+        "type": "Defense",
+        "Name": "Phalanx Formation",
+        "Cost": 5,
+        "Rarity": 2,
+        "Power": 60,
         "TargetType": 4,
         "ClassType": 0
       },
       {
         "type": "Support",
-        "Effect": 3,
-        "Name": "History Lesson",
-        "Cost": 5,
+        "Effect": 2,
+        "Name": "Kamikaze",
+        "Cost": 0,
         "Rarity": 2,
         "Power": 80,
-        "TargetType": 6,
-        "ClassType": 0
-      },
-      {
-        "type": "Defense",
-        "Name": "Wooden Shield",
-        "Cost": 5,
-        "Rarity": 0,
-        "Power": 20,
-        "TargetType": 1,
+        "TargetType": 2,
         "ClassType": 0
       }
     ],
-    "Name": "4564587",
-    "Level": 17,
+    "Name": "Nigga",
+    "Level": 23,
     "Hp": 150,
-    "MaxHp": 334,
-    "Skill": 45,
-    "DefenseBuff": 29,
+    "MaxHp": 403,
+    "Skill": 60,
+    "DefenseBuff": 38,
     "IsDefeated": false
   }
 ]

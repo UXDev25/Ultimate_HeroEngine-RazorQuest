@@ -109,12 +109,30 @@ public class CombatEngine
         string winMsg = HeroTeam!.Members.Count != 0 ? Messages.HeroWin : Messages.EnemyWin; 
         LiveLog.Log(winMsg);
         LogRegister.SaveCombatSession(_initalHeroTeam, _initialEnemyTeam, winMsg);
+        WriteOntoCsv();
         if (HeroTeam.Members.Count == 0) return true;
         HeroTeam.Members.ForEach(hero => hero.LevelUp());
         return false;
     }
 
-        /// <summary>
+    private void WriteOntoCsv()
+    {
+        var stats = new CombatResult
+        {
+            Date = DateTime.Now,
+            HeroesNames = string.Join(" / ", HeroTeam.Members.Select(h => h.Name)),
+            EnemiesNames = string.Join(" / ", EnemyTeam.Members.Select(e => e.Name)),
+            Result = HeroTeam.Members.Count > 0 ? "Victoria" : "Derrota",
+            TotalRounds = Round - 1,
+            TotalDamage = StatCalculator.AllCombatDamage,
+            // Fem servir el teu mètode de StatCalculator
+            EffectiveHero = HeroTeam.Members.Count > 0 ? StatCalculator.CalculateEffectiveHero(HeroTeam).Name : "Cap"
+        };
+
+        CsvStatsWriter.AppendCombatStats(stats);
+    }
+
+    /// <summary>
     /// Resets the combat statistics and hero states for a new battle or round. 
     /// It clears the defeated enemy tracking variables, fully restores the health of all active hero team members, 
     /// and resets their defense buffs to the default values.

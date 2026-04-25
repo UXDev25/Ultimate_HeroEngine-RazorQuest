@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Ultimate_HeroEngine\Ultimate_HeroEngine.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Files\Writers\" />
+    </ItemGroup>
+
 </Project>

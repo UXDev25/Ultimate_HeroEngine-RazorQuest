@@ -1,0 +1,83 @@
+==================================================
+COMBAT DATE: 2026-04-26 00:45:14
+HEROES: Balatro, 456, 4564587
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Rogue]  456 > Ability > 1279,9
+[Warrior]  4564587 > Attack > 1799,7
+[Minion]  Rabid Wolf > Attack > 119,5
+[Elite]  Orc Warlord > Introduce > 119,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Rogue]  456 > Attack > 2035,1
+[Mage]  Balatro > Introduce > 2035,1
+[Elite]  Orc Warlord > Introduce > 2035,1
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Rogue]  456 > Attack > 2034,8999
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 00:45:14
+HEROES: 
+ENEMIES: Elite Guard, Shadow Assassin, Little Goblin, Orc Warlord
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Rogue]  456 > Ability > 2034,8999
+[Warrior]  4564587 > Ability > 2034,8999
+[Minion]  Little Goblin > Introduce > 2034,8999
+[Elite]  Orc Warlord > Ability > 2034,8999
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
+==================================================
+COMBAT DATE: 2026-04-26 00:52:13
+HEROES: 
+ENEMIES: Little Goblin, Armored Golem, Orc Warlord
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 2399,7
+[Minion]  Little Goblin > Attack > 2399,7
+[Elite]  Armored Golem > Attack > 2399,7
+[Elite]  Orc Warlord > Ability > 2399,7
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
+==================================================
+COMBAT DATE: 2026-04-26 01:04:40
+HEROES: 
+ENEMIES: Elite Guard, Dark Cultist, Rabid Wolf, Orc Warlord
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 0
+[Elite]  Elite Guard > Ability > 0
+[Minion]  Rabid Wolf > Attack > 0
+[Elite]  Dark Cultist > Introduce > 0
+[Elite]  Orc Warlord > Attack > 0
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 0
+[Elite]  Elite Guard > Attack > 0
+[Minion]  Rabid Wolf > Introduce > 0
+[Elite]  Dark Cultist > Introduce > 0
+[Elite]  Orc Warlord > Ability > 0
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
