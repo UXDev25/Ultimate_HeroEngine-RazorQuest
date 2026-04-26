@@ -1,0 +1,42 @@
+﻿@page
+@using Ultimate_HeroEngine.Core.Objects
+@using Ultimate_HeroEngine.Logic.ProgramEngine
+@model HeroDetailModel
+@{
+    ViewData["Title"] = "Hero Details";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DETAILS</title>
+</head>
+<body>
+@if (Model.ActualHero == null)
+{
+    <h3>An error has ocurred: no hero was found</h3>
+}
+else
+{
+    <div>
+        <h2>@Model.ActualHero?.Name</h2>
+        <ul>
+            <li>Class: @Model.ActualHero.GetType().Name</li>
+            <li>Name: @Model.ActualHero.Name</li>
+            <li>HP: @Model.ActualHero.MaxHp</li>
+            <li>Level: @Model.ActualHero.Level</li>
+            <li>Abilities:
+                <ul>
+                    @foreach (var ability in Model.ActualHero.Abilities)
+                    {
+                        <li>[@ability.Rarity] @ability.Name: target to @ability.TargetType, power: @ability.Power, type: @ability.GetType().Name</li>
+                    }
+                </ul>
+            </li>
+        </ul>
+    </div>
+}
+
+</body>
+</html>

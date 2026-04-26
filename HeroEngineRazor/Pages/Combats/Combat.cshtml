@@ -1,0 +1,55 @@
+﻿@page
+@model HeroEngineRazor.Pages.Combat
+@{
+    ViewData["Title"] = "Combat";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Combat</title>
+</head>
+<body>
+<div>
+    <h1>Combat simulator</h1>
+
+    <form method="post" asp-page-handler="Simulate">
+        <button type="submit" style="padding: 10px 20px; font-size: 1.2em; background-color: darkred; color: white;">
+            Start simulation
+        </button>
+    </form>
+    @if (!Model.hasHeroes)
+    {
+        <p style="color: red">You need to have heroes on your team</p>
+    }
+    @if (Model.CombatRegister.Count > 0)
+    {
+        <div style="background-color: black; color: #00FF00; font-family: monospace; padding: 20px; margin-top: 30px; border-radius: 5px; height: 500px; overflow-y: scroll;">
+            @foreach (var linea in Model.CombatRegister)
+            {
+                <p style="margin: 2px 0;">> @linea</p>
+            }
+        </div>
+        
+    }
+    @if (Model.UltimatCombatText != null && Model.UltimatCombatText.Count > 0)
+    {
+        <h3>Combat Log:</h3>
+        <div style="background-color: #111; color: #eee; padding: 15px; font-family: monospace;">
+            @foreach (var linia in Model.UltimatCombatText)
+            {
+                if (linia.StartsWith("DATA") || linia.StartsWith("HEROES") || linia.StartsWith("ENEMIES") || linia.StartsWith("RESULT"))
+                {
+                    <p style="margin: 2px 0; color: #00ff00;"><strong>@linia</strong></p>
+                }
+                else
+                {
+                    <p style="margin: 2px 0;">> @linia</p>
+                }
+            }
+        </div>
+    }
+</div>
+</body>
+</html>

@@ -1,10 +1,18 @@
-﻿using Ultimate_HeroEngine.Core;
+﻿using System.Text.Json.Serialization;
+using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Entities;
+using Ultimate_HeroEngine.Hierarchy.Abilities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Abilities;
 using Core.Enums;
 
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
+[JsonDerivedType(typeof(Attack), typeDiscriminator: "Attack")]
+[JsonDerivedType(typeof(Defense), typeDiscriminator: "Defense")]
+[JsonDerivedType(typeof(Healing), typeDiscriminator: "Healing")]
+[JsonDerivedType(typeof(Support), typeDiscriminator: "Support")]
 public abstract class Ability : IComparable<Ability>
 {
     private int _cost;
@@ -25,12 +33,15 @@ public abstract class Ability : IComparable<Ability>
         }
     }
     public ETarget TargetType { get; set; }
+    
+    [JsonIgnore]
     public Entity? User { get; set; }
 
     public EClasses ClassType { get; set; }
 
     public abstract void Execute(Entity? target);
     
+    public Ability() { }
     public Ability(string name, int cost, ERarity rarity, int power, ETarget targetType, Entity? user, EClasses classType)
     {
         Name = name;
@@ -67,16 +78,16 @@ public abstract class Ability : IComparable<Ability>
         switch (Rarity)
         {
             case ERarity.Common:
-                if (value < KeyValues.DefFreeCost || value > KeyValues.DefCommonCost) return KeyValues.DefCommonCost;
+                if (value < GameConfig.Instance.Data.KeyValues.DefFreeCost || value > GameConfig.Instance.Data.KeyValues.DefCommonCost) return GameConfig.Instance.Data.KeyValues.DefCommonCost;
                 return value;
             case ERarity.Rare:
-                if (value < KeyValues.DefCommonCost || value > KeyValues.DefRareCost) return KeyValues.DefRareCost;
+                if (value < GameConfig.Instance.Data.KeyValues.DefCommonCost || value > GameConfig.Instance.Data.KeyValues.DefRareCost) return GameConfig.Instance.Data.KeyValues.DefRareCost;
                 return value;
             case ERarity.Epic:
-                if (value < KeyValues.DefRareCost || value > KeyValues.DefEpicCost) return KeyValues.DefEpicCost;
+                if (value < GameConfig.Instance.Data.KeyValues.DefRareCost || value > GameConfig.Instance.Data.KeyValues.DefEpicCost) return GameConfig.Instance.Data.KeyValues.DefEpicCost;
                 return value;
             case ERarity.Legendary:
-                if (value < KeyValues.DefEpicCost) return KeyValues.DefLegendaryCost;
+                if (value < GameConfig.Instance.Data.KeyValues.DefEpicCost) return GameConfig.Instance.Data.KeyValues.DefLegendaryCost;
                 return value;
             default: return value;
         }
@@ -94,16 +105,16 @@ public abstract class Ability : IComparable<Ability>
         switch (Rarity)
         {
             case ERarity.Common:
-                if (value < KeyValues.DefMinPower || value > KeyValues.DefCommonPower) return KeyValues.DefCommonPower;
+                if (value < GameConfig.Instance.Data.KeyValues.DefMinPower || value > GameConfig.Instance.Data.KeyValues.DefCommonPower) return GameConfig.Instance.Data.KeyValues.DefCommonPower;
                 return value;
             case ERarity.Rare:
-                if (value < KeyValues.DefCommonPower || value > KeyValues.DefRarePower) return KeyValues.DefRarePower;
+                if (value < GameConfig.Instance.Data.KeyValues.DefCommonPower || value > GameConfig.Instance.Data.KeyValues.DefRarePower) return GameConfig.Instance.Data.KeyValues.DefRarePower;
                 return value;
             case ERarity.Epic:
-                if (value < KeyValues.DefRarePower || value > KeyValues.DefEpicPower) return KeyValues.DefEpicPower;
+                if (value < GameConfig.Instance.Data.KeyValues.DefRarePower || value > GameConfig.Instance.Data.KeyValues.DefEpicPower) return GameConfig.Instance.Data.KeyValues.DefEpicPower;
                 return value;
             case ERarity.Legendary:
-                if (value < KeyValues.DefEpicPower) return KeyValues.DefLegendaryPower;
+                if (value < GameConfig.Instance.Data.KeyValues.DefEpicPower) return GameConfig.Instance.Data.KeyValues.DefLegendaryPower;
                 return value;
             default: return value;
         }

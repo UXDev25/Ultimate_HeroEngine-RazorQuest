@@ -1,6 +1,7 @@
 ﻿using Ultimate_HeroEngine.Abilities;
 using Ultimate_HeroEngine.Core;
 using Ultimate_HeroEngine.Hierarchy.Entities.Heroes;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Entities;
 
@@ -16,6 +17,7 @@ public class Mage : Hero
             Mana = value;
         }
     }
+    public Mage() { }
 
     public Mage(string name, int level, float hp, float skill, float defenseBuff , List<Ability> abilities , int mana, int arkLvl) : base(name, level, hp, skill, defenseBuff, abilities)
     {
@@ -23,17 +25,17 @@ public class Mage : Hero
         ArkLvl = arkLvl;
     }
     
-    public Mage(string name, int level) : this(name, level, KeyValues.DefMageHp, KeyValues.DefMageSkill, KeyValues.DefDefense, new List<Ability>(), KeyValues.DefMageMana, KeyValues.DefMageArk) { }
+    public Mage(string name, int level) : this(name, level, GameConfig.Instance.Data.KeyValues.DefMageHp, GameConfig.Instance.Data.KeyValues.DefMageSkill, GameConfig.Instance.Data.KeyValues.DefDefense, new List<Ability>(), GameConfig.Instance.Data.KeyValues.DefMageMana, GameConfig.Instance.Data.KeyValues.DefMageArk) { }
     
-    public override string ToString() => base.ToString() + String.Format(KeyValues.MageIntroduce, Mana, ArkLvl);
+    public override string ToString() => base.ToString() + String.Format(GameConfig.Instance.Data.KeyValues.MageIntroduce, Mana, ArkLvl);
     
     public override void LevelUp()
     {
-        Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.LevelUp, GetType().Name, Name));
         base.LevelUp();
-        Mana += KeyValues.DefManaIncrease;
-        ArkLvl += KeyValues.DefArkLvlIncrease;
+        Mana += GameConfig.Instance.Data.KeyValues.DefManaIncrease;
+        ArkLvl += GameConfig.Instance.Data.KeyValues.DefArkLvlIncrease;
     }
     
-    public override string GetAbilityCostValue() => KeyValues.MageAbilityCost;
+    public override string GetAbilityCostValue() => GameConfig.Instance.Data.KeyValues.MageAbilityCost;
 }

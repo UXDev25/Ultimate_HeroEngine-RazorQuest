@@ -34,27 +34,29 @@ public abstract class Entity : IAttack, ITargetable
                 return;
             }
             _hp = value < 0 ? 0 : value;
-            _isDefeated = _hp <= 0;
-            if (_isDefeated) Defeated();
+            IsDefeated = _hp <= 0;
+            if (IsDefeated) Defeated();
         }
     }
     public float MaxHp { get; set; }
     public float Skill { get; set; }
     public float DefenseBuff { get; set; }
-    public bool IsDefeated { get => _isDefeated; }
+    public bool IsDefeated { get; set;}
 
+    public Entity() { }
+    
     public Entity(string name, int level, float maxHp, float skill, float defenseBuff)
     {
         Name = name;
         _level = 1;
-        Level = level;
         MaxHp = maxHp;
         Hp = maxHp;
         Skill = skill;
         DefenseBuff = defenseBuff;
+        Level = level;
     }
 
-    public override string ToString() => String.Format(KeyValues.DefIntroduce, GetType().Name, Name, Level, Hp, MaxHp);
+    public override string ToString() => String.Format(GameConfig.Instance.Data.KeyValues.DefIntroduce, GetType().Name, Name, Level, Hp, MaxHp);
 
         /// <summary>
     /// Executes a standard attack against the specified target entity. 
@@ -63,8 +65,8 @@ public abstract class Entity : IAttack, ITargetable
     /// <param name="target">The entity that will receive the attack.</param>
     public virtual void AttackMeth(Entity? target)
     {
-        Console.WriteLine(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name);
-        target.ReceiveDamage(Skill * KeyValues.DefPower);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
+        target.ReceiveDamage(Skill * GameConfig.Instance.Data.KeyValues.DefPower);
     }
 
     /// <summary>
@@ -75,11 +77,11 @@ public abstract class Entity : IAttack, ITargetable
     public virtual void ReceiveDamage(float damage)
     {
         float actualDamage = damage - (DefenseBuff / 10f);
-        actualDamage = Math.Max(KeyValues.MinDefaultDamage, actualDamage);
+        actualDamage = Math.Max(GameConfig.Instance.Data.KeyValues.MinDefaultDamage, actualDamage);
         StatCalculator.LastDamagePoint = actualDamage;
         StatCalculator.AllCombatDamage += StatCalculator.LastDamagePoint;
         Hp -= actualDamage;
-        Console.WriteLine(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
 
     /// <summary>
@@ -88,11 +90,11 @@ public abstract class Entity : IAttack, ITargetable
     /// </summary>
     public virtual void LevelUp()
     {
-        Console.WriteLine(Messages.LevelUp, GetType().Name, Name);
-        Level++;
-        MaxHp += KeyValues.DefHpIncrease;
-        DefenseBuff += KeyValues.DefDefIncrease;
-        Skill += KeyValues.DefSkillIncrease;
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.LevelUp, GetType().Name, Name));
+        _level++;
+        MaxHp += GameConfig.Instance.Data.KeyValues.DefHpIncrease;
+        DefenseBuff += GameConfig.Instance.Data.KeyValues.DefDefIncrease;
+        Skill += GameConfig.Instance.Data.KeyValues.DefSkillIncrease;
     }
 
     /// <summary>
@@ -107,7 +109,7 @@ public abstract class Entity : IAttack, ITargetable
     /// </summary>
     public virtual void Defeated()
     {
-        Console.WriteLine(Messages.DefeatMsg, GetType().Name, Name);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.DefeatMsg, GetType().Name, Name));
         _hp = 0;
     }
 

@@ -7,15 +7,6 @@ namespace Ultimate_HeroEngine.Logic.ProgramEngine;
 
 public static class UiManager
 {
-    /// <summary>
-    /// Asks the user to insert a key to continue with the program thread
-    /// </summary>
-    public static void ContinueAsk()
-    {
-        Console.WriteLine(UI.InsertKey);
-        Console.ReadKey();
-    }
-    
         /// <summary>
     /// Displays the team's header information, including its category and total number of members, 
     /// and then lists all individual members.
@@ -23,8 +14,8 @@ public static class UiManager
     /// <param name="team">The team whose header and members will be displayed.</param>
     public static void ListTeam(Team? team)
     {
-        string teamData = String.Format(UI.TeamTitle, team!.Members[0].GetCategoryName(), team.Members.Count + team.DefeatedMembers.Count);
-        Console.WriteLine(UI.GenDivider, teamData);
+        string teamData = String.Format(GameConfig.Instance.Data.UI.TeamTitle, team!.Members[0].GetCategoryName(), team.Members.Count + team.DefeatedMembers.Count);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.GenDivider, teamData));
         ShowMembers(team);
     }
 
@@ -35,7 +26,7 @@ public static class UiManager
     /// <param name="targets">The team containing the available target entities.</param>
     public static void ListTargets(Team? targets)
     {
-        Console.WriteLine(UI.SelectTarget);
+        LiveLog.Log(GameConfig.Instance.Data.UI.SelectTarget);
         ShowMembers(targets);
     }
 
@@ -50,7 +41,7 @@ public static class UiManager
         List<Entity> allMembers = team!.Members.Concat(team.DefeatedMembers).ToList();
         foreach (var entity in allMembers)
         {
-            Console.WriteLine(String.Format(UI.EntityStats, i, entity.GetCategoryName(), entity.Name, entity.Hp, entity.MaxHp, entity.GetType().Name) + String.Format(entity.IsDefeated ? UI.DefeatState : ""));
+            LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.EntityStats, i, entity.GetCategoryName(), entity.Name, entity.Hp, entity.MaxHp, entity.GetType().Name) + String.Format(entity.IsDefeated ? GameConfig.Instance.Data.UI.DefeatState : ""));
             i++;
         }
     }
@@ -62,17 +53,17 @@ public static class UiManager
     /// <param name="hero">The hero whose abilities will be listed and sorted.</param>
     public static void ListAbilities(Hero hero)
     {
-        Console.WriteLine(UI.GenDivider, String.Format(UI.AbilityListTitle, hero.Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.GenDivider, String.Format(GameConfig.Instance.Data.UI.AbilityListTitle, hero.Name)));
         if (hero.Abilities.Count == 0)
         {
-            Console.WriteLine(Messages.NoAbility);
-            Console.WriteLine(UI.Divider);
+            LiveLog.Log(GameConfig.Instance.Data.Messages.NoAbility);
+            LiveLog.Log(GameConfig.Instance.Data.UI.Divider);
             return;
         }
         foreach (var ability in hero.SortAbilitiesList())
         {
-            Console.WriteLine(UI.AbilityStats, ability.Rarity, ability.Name, ability.GetType().Name, ability.TargetType, ability.Cost, hero.GetAbilityCostValue());
+            LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.AbilityStats, ability.Rarity, ability.Name, ability.GetType().Name, ability.TargetType, ability.Cost, hero.GetAbilityCostValue()));
         }
-        Console.WriteLine(UI.Divider);
+        LiveLog.Log(GameConfig.Instance.Data.UI.Divider);
     }
 }

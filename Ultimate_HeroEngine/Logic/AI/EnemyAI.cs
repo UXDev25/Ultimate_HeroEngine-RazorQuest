@@ -4,6 +4,7 @@ using Ultimate_HeroEngine.Core.Enums;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Entities;
 using Ultimate_HeroEngine.Hierarchy;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 using Ultimate_HeroEngine.Logic.SupportClasses;
 
 namespace Ultimate_HeroEngine.Logic.AI;
@@ -18,7 +19,7 @@ public static class EnemyAi
         
         foreach (var enemy in enemyTeam.Members)
         {
-            ECombatAction actionChoice = (ECombatAction)rand.Next(KeyValues.ActionMinNumber, KeyValues.ActionMaxNumber);
+            ECombatAction actionChoice = (ECombatAction)rand.Next(GameConfig.Instance.Data.KeyValues.ActionMinNumber, GameConfig.Instance.Data.KeyValues.ActionMaxNumber);
             if (enemy is IUseAbility notMinion && actionChoice == ECombatAction.Ability)
             {
                 int abilityIndex = rand.Next(0, notMinion.Abilities.Count);

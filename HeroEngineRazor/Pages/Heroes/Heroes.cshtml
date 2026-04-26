@@ -1,0 +1,46 @@
+﻿@page
+@using Ultimate_HeroEngine.Core.Objects
+@using Ultimate_HeroEngine.Logic.ProgramEngine
+@model HeroesModel
+@{
+    ViewData["Title"] = "Heroes";
+}
+
+<body class="text-center">
+    <h1 class="display-4">Ultimate Hero Engine: RazorQuest</h1>
+<div>
+    <br/><br/><br/><br/><br/>
+    @if (Model.ActualHeroTeam.Members.Count == 0)
+    {
+        <h3>You dont have any heroes on your team yet</h3>
+    }
+    else
+    {
+        <h2>Loaded Heroes: @Model.ActualHeroTeam.Members.Count</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Name</th>
+                <th>Base HP</th>
+                <th>Level</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var hero in HeroStorage.HeroTeamList.Members)
+            {
+                <tr>
+                    <td>@hero.GetType().Name</td>
+                    <td>@hero.Name</td>
+                    <td>@hero.MaxHp</td>
+                    <td>@hero.Level</td>
+                    <td><a asp-page="./HeroDetail" asp-route-id="@hero.Name">Details</a></td>
+                </tr>    
+            }
+            </tbody>
+        </table>
+    }
+    <a asp-page="./CreateHero" class="btn btn-primary">Create Hero</a>
+</div>
+
+</body>

@@ -1,0 +1,150 @@
+﻿@page
+@model StatsModel
+@{
+    ViewData["Title"] = "Advanced Statistics";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Statistics Dashboard</h1>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark border-secondary h-100">
+                <div class="card-header border-secondary text-info fw-bold">Class Distribution</div>
+                <div class="card-body">
+                    <table class="table table-dark table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Count</th>
+                                <th style="width: 50%;">Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var stat in Model.ClassDistribution)
+                            {
+                                <tr>
+                                    <td>@stat.ClassName</td>
+                                    <td>@stat.Count</td>
+                                    <td class="align-middle">
+                                        <div class="progress bg-secondary" style="height: 15px;">
+                                            <div class="progress-bar bg-info text-dark fw-bold" role="progressbar" 
+                                                 style="width: @(stat.Percentage.ToString(System.Globalization.CultureInfo.InvariantCulture))%;" 
+                                                 aria-valuenow="@stat.Percentage" aria-valuemin="0" aria-valuemax="100">
+                                                @stat.Percentage%
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <p class="text-muted mb-0 mt-3 text-end">Total active Heroes: <strong>@Model.TotalHeroes</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark border-secondary h-100">
+                <div class="card-header border-secondary text-warning fw-bold">Top 3 Heroes by Level</div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        @for (int i = 0; i < Model.TopHeroes.Count; i++)
+                        {
+                            var hero = Model.TopHeroes[i];
+                            <li class="list-group-item bg-dark text-white border-secondary d-flex justify-content-between align-items-center mb-2 rounded">
+                                <span>
+                                    <strong class="text-warning fs-5 me-2">#@(i + 1)</strong> 
+                                    <span class="fs-5">@hero.Name</span> 
+                                    <small class="text-muted ms-1">(@hero.GetType().Name)</small>
+                                </span>
+                                <span class="badge bg-warning text-dark rounded-pill fs-6">Level @hero.Level</span>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark border-secondary h-100">
+                <div class="card-header border-secondary text-success fw-bold">Common Ability Types</div>
+                <div class="card-body">
+                    <table class="table table-dark table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var ability in Model.CommonAbilities)
+                            {
+                                <tr>
+                                    <td>@ability.Key</td>
+                                    <td><span class="badge bg-success">@ability.Value in use</span></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8 mb-4">
+            <div class="card bg-dark border-secondary h-100">
+                <div class="card-header border-secondary d-flex justify-content-between align-items-center">
+                    <span class="text-primary fw-bold">Combat History</span>
+                    
+                    <form method="get" class="d-flex">
+                        <select name="FilterResult" class="form-select form-select-sm bg-secondary text-white border-0 me-2" asp-for="FilterResult">
+                            <option value="All">Show All</option>
+                            <option value="Victory">Victories</option>
+                            <option value="Defeat">Defeats</option>
+                        </select>
+                        <button type="submit" class="btn btn-sm btn-primary">Filter</button>
+                    </form>
+                </div>
+                
+                <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+                    @if(Model.CombatHistory.Count == 0)
+                    {
+                        <p class="text-muted">No data to display or it does not match the filter.</p>
+                    }
+                    else
+                    {
+                        <table class="table table-dark table-hover table-sm">
+                            <thead class="sticky-top bg-dark">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Result</th>
+                                    <th>Rounds</th>
+                                    <th>Total Damage</th>
+                                    <th>MVP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var match in Model.CombatHistory)
+                                {
+                                    <tr>
+                                        <td>@match.Date.ToString("dd/MM HH:mm")</td>
+                                        <td>
+                                            <span class="badge @(match.Result == "Victory" ? "bg-primary" : "bg-danger")">
+                                                @match.Result
+                                            </span>
+                                        </td>
+                                        <td>@match.TotalRounds</td>
+                                        <td>@match.TotalDamage.ToString("N0")</td>
+                                        <td>@match.EffectiveHero</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
