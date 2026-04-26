@@ -2,6 +2,7 @@
 using Ultimate_HeroEngine.Core.Enums;
 using Ultimate_HeroEngine.Core.Interfaces;
 using Ultimate_HeroEngine.Hierarchy.Abilities;
+using Ultimate_HeroEngine.Logic.ProgramEngine;
 
 namespace Ultimate_HeroEngine.Core.Objects;
 
@@ -83,7 +84,7 @@ namespace Ultimate_HeroEngine.Core.Objects;
             List<Ability> compatibleAbilities = GameAbilities.Where(ability => user.GetType().Name == ability.ClassType.ToString()).ToList();
             if (compatibleAbilities.Count == 0) return GameAbilities.ToList();
             List<Ability> randomAbilities = new List<Ability>();
-            for (int i = 0; i < KeyValues.MaxAbilityNum; i++)
+            for (int i = 0; i < GameConfig.Instance.Data.KeyValues.MaxAbilityNum; i++)
             {
                 randomAbilities.Add(compatibleAbilities[rand.Next(0, (compatibleAbilities.Count - 1))]);
             }

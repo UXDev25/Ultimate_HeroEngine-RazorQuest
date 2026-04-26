@@ -81,3 +81,124 @@ BATTLE LOG - Round 2
 RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
 
 
+==================================================
+COMBAT DATE: 2026-04-26 13:53:07
+HEROES: 
+ENEMIES: Armored Golem, Orc Warlord, Armored Golem
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 2399,9
+[Elite]  Armored Golem > Introduce > 2399,9
+[Elite]  Armored Golem > Introduce > 2399,9
+[Elite]  Orc Warlord > Attack > 2399,9
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
+==================================================
+COMBAT DATE: 2026-04-26 13:54:11
+HEROES: Balatro, Nigga, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3199,7
+[Warrior]  Nigga > Attack > 3499,7
+[Warrior]  Balatro > Introduce > 3499,7
+[Minion]  Rabid Wolf > Attack > 3499,7
+[Minion]  Bandit Scout > Introduce > 3499,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Ability > 3499,7
+[Warrior]  Nigga > Ability > 3499,7
+[Warrior]  Balatro > Ability > 3499,7
+[Minion]  Rabid Wolf > Introduce > 3499,7
+[Minion]  Bandit Scout > Attack > 3499,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3199,9
+[Warrior]  Nigga > Ability > 3199,9
+[Warrior]  Balatro > Ability > 3199,9
+[Minion]  Bandit Scout > Attack > 3199,9
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3199,9
+[Warrior]  Nigga > Introduce > 3199,9
+[Warrior]  Balatro > Introduce > 3199,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 13:54:11
+HEROES: 
+ENEMIES: Rabid Wolf, Orc Warlord
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 3199,9
+[Warrior]  Nigga > Introduce > 3199,9
+[Warrior]  Balatro > Introduce > 3199,9
+[Minion]  Bandit Scout > Attack > 3199,9
+[Elite]  Armored Golem > Ability > 3199,9
+[Minion]  Rabid Wolf > Introduce > 3199,9
+[Elite]  Orc Warlord > Attack > 3199,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3199,9
+[Warrior]  Nigga > Introduce > 3199,9
+[Warrior]  Balatro > Attack > 3699,7
+[Minion]  Bandit Scout > Introduce > 3699,7
+[Minion]  Rabid Wolf > Introduce > 3699,7
+[Elite]  Orc Warlord > Ability > 3699,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3299,9
+[Warrior]  Nigga > Introduce > 3299,9
+[Warrior]  Balatro > Ability > 3299,9
+[Minion]  Rabid Wolf > Introduce > 3299,9
+[Elite]  Orc Warlord > Introduce > 3299,9
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
+==================================================
+COMBAT DATE: 2026-04-26 13:58:04
+HEROES: 
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 79919,7
+[Warrior]  Nigga > Introduce > 79919,7
+[Warrior]  Balatro > Introduce > 79919,7
+[Elite]  Elite Guard > Ability > 79919,7
+[Elite]  Elite Guard > Ability > 79919,7
+[Elite]  Shadow Assassin > Attack > 79919,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 79919,7
+[Warrior]  Nigga > Ability > 79919,7
+[Warrior]  Balatro > Attack > 89893,7
+[Elite]  Elite Guard > Ability > 89893,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 89893,7
+[Warrior]  Nigga > Attack > 87372,2
+[Warrior]  Balatro > Ability > 87372,2
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+

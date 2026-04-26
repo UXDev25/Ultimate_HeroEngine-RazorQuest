@@ -15,7 +15,7 @@ public class Healing : Ability
     {
         
         float finalHp = target!.Hp >= target.MaxHp ? target.Hp : target.Hp + Power * User!.Skill / 1.5f;
-        LiveLog.Log(String.Format(Messages.Heal, target.Name, finalHp - target.Hp));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Heal, target.Name, finalHp - target.Hp));
         target.Hp = finalHp;
     }
 }

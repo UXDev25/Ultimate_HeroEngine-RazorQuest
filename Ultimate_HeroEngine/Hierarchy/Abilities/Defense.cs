@@ -13,7 +13,7 @@ public class Defense : Ability
 
     public override void Execute(Entity? target)
     {
-        LiveLog.Log(String.Format(Messages.BuffDefense, User!.Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.BuffDefense, User!.Name));
         target!.DefenseBuff += Power * User.Skill / 1.5f;
     }
 }

@@ -56,7 +56,7 @@ public abstract class Entity : IAttack, ITargetable
         Level = level;
     }
 
-    public override string ToString() => String.Format(KeyValues.DefIntroduce, GetType().Name, Name, Level, Hp, MaxHp);
+    public override string ToString() => String.Format(GameConfig.Instance.Data.KeyValues.DefIntroduce, GetType().Name, Name, Level, Hp, MaxHp);
 
         /// <summary>
     /// Executes a standard attack against the specified target entity. 
@@ -65,8 +65,8 @@ public abstract class Entity : IAttack, ITargetable
     /// <param name="target">The entity that will receive the attack.</param>
     public virtual void AttackMeth(Entity? target)
     {
-        LiveLog.Log(String.Format(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
-        target.ReceiveDamage(Skill * KeyValues.DefPower);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
+        target.ReceiveDamage(Skill * GameConfig.Instance.Data.KeyValues.DefPower);
     }
 
     /// <summary>
@@ -77,11 +77,11 @@ public abstract class Entity : IAttack, ITargetable
     public virtual void ReceiveDamage(float damage)
     {
         float actualDamage = damage - (DefenseBuff / 10f);
-        actualDamage = Math.Max(KeyValues.MinDefaultDamage, actualDamage);
+        actualDamage = Math.Max(GameConfig.Instance.Data.KeyValues.MinDefaultDamage, actualDamage);
         StatCalculator.LastDamagePoint = actualDamage;
         StatCalculator.AllCombatDamage += StatCalculator.LastDamagePoint;
         Hp -= actualDamage;
-        LiveLog.Log(String.Format(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
 
     /// <summary>
@@ -90,11 +90,11 @@ public abstract class Entity : IAttack, ITargetable
     /// </summary>
     public virtual void LevelUp()
     {
-        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.LevelUp, GetType().Name, Name));
         _level++;
-        MaxHp += KeyValues.DefHpIncrease;
-        DefenseBuff += KeyValues.DefDefIncrease;
-        Skill += KeyValues.DefSkillIncrease;
+        MaxHp += GameConfig.Instance.Data.KeyValues.DefHpIncrease;
+        DefenseBuff += GameConfig.Instance.Data.KeyValues.DefDefIncrease;
+        Skill += GameConfig.Instance.Data.KeyValues.DefSkillIncrease;
     }
 
     /// <summary>
@@ -109,7 +109,7 @@ public abstract class Entity : IAttack, ITargetable
     /// </summary>
     public virtual void Defeated()
     {
-        LiveLog.Log(String.Format(Messages.DefeatMsg, GetType().Name, Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.DefeatMsg, GetType().Name, Name));
         _hp = 0;
     }
 

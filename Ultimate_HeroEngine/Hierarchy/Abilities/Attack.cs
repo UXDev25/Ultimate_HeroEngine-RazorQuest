@@ -13,8 +13,8 @@ public class Attack : Ability, IAttack
     
     public void AttackMeth(Entity? target)
     {
-        LiveLog.Log(String.Format(Messages.Attack,User!.GetType().Name, User.Name, target!.GetType().Name, target.Name));
-        target.ReceiveDamage(User.Skill * KeyValues.DefPower);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Attack,User!.GetType().Name, User.Name, target!.GetType().Name, target.Name));
+        target.ReceiveDamage(User.Skill * GameConfig.Instance.Data.KeyValues.DefPower);
     }
 
     public override void Execute(Entity? target)

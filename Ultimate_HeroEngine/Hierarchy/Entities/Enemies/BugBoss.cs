@@ -30,32 +30,32 @@ public class BugBoss : Enemy, IUseAbility
         Abilities = Abilities = AbilityCatalog.GetRandomAbilities(this);
     }
     
-    public override string ToString() => base.ToString() + String.Format(KeyValues.BossIntroduce, DmgMult, Mana, Armor);
+    public override string ToString() => base.ToString() + String.Format(GameConfig.Instance.Data.KeyValues.BossIntroduce, DmgMult, Mana, Armor);
     
     public override void ReceiveDamage(float damage)
     {
         float actualDamage = damage - (1 + (DefenseBuff / 10)) - (DefenseBuff / 10) * (Armor / 100);
-        actualDamage = Math.Max(KeyValues.MinDefaultDamage, actualDamage);
+        actualDamage = Math.Max(GameConfig.Instance.Data.KeyValues.MinDefaultDamage, actualDamage);
         Hp -= actualDamage;
         
-        LiveLog.Log(String.Format(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
 
     public override void AttackMeth(Entity? target)
     {
-        LiveLog.Log(String.Format(Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Attack, GetType().Name.ToUpper(), Name, target!.GetType().Name, target.Name));
         
-        target.ReceiveDamage(Skill * KeyValues.DefBossPow * DmgMult);
+        target.ReceiveDamage(Skill * GameConfig.Instance.Data.KeyValues.DefBossPow * DmgMult);
     }
     
     //**Abilities
     public void UseAbility(int abilityIndex, ITargetable? target)
     {
-        if (target is Entity ent) LiveLog.Log(String.Format(Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name));
+        if (target is Entity ent) LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name));
         
         if (target is Team team)
         {
-            LiveLog.Log(String.Format(Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name));
+            LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name));
             
             foreach (var member in team.Members)
             {
@@ -73,8 +73,8 @@ public class BugBoss : Enemy, IUseAbility
     public override void LevelUp()
     {
         base.LevelUp();
-        Mana += KeyValues.DefManaIncrease;
-        Armor += KeyValues.DefArmorIncrease;
-        DmgMult += KeyValues.DefMultIncrease;
+        Mana += GameConfig.Instance.Data.KeyValues.DefManaIncrease;
+        Armor += GameConfig.Instance.Data.KeyValues.DefArmorIncrease;
+        DmgMult += GameConfig.Instance.Data.KeyValues.DefMultIncrease;
     }
 }

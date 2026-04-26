@@ -40,10 +40,10 @@ public class FilesModel : PageModel
     {
         if (CurrentConfig != null)
         {
-            GameConfig.Instance.Data.KeyValues.DefWarriorHp = CurrentConfig.KeyValues.DefWarriorHp;
-            GameConfig.Instance.Data.KeyValues.DefEliteHp = CurrentConfig.KeyValues.DefEliteHp;
-            GameConfig.Instance.Data.Messages.HeroWin = CurrentConfig.Messages.HeroWin;
-            
+            GameConfig.Instance.Data.KeyValues.DefPower = CurrentConfig.KeyValues.DefPower;
+            GameConfig.Instance.Data.KeyValues.RandomLevelRange = CurrentConfig.KeyValues.RandomLevelRange;
+            GameConfig.Instance.Data.KeyValues.DefTeamSize = CurrentConfig.KeyValues.DefTeamSize;
+            GameConfig.Instance.Data.KeyValues.MaxAbilityNum = CurrentConfig.KeyValues.MaxAbilityNum;
             GameConfig.Instance.SaveConfig();
         }
 

@@ -15,8 +15,8 @@ public static class MenuManager
     /// </summary>
     public static void PresentProgram()
     {
-        LiveLog.Log(String.Format(UI.GenDivider, UI.Title));
-        LiveLog.Log(UI.Team);
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.GenDivider, GameConfig.Instance.Data.UI.Title));
+        LiveLog.Log(GameConfig.Instance.Data.UI.Team);
     }
 
     /// <summary>

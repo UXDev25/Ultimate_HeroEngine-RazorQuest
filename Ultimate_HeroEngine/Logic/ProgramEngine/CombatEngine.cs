@@ -91,22 +91,22 @@ public class CombatEngine
         _initalHeroTeam = HeroTeam;
         _initialEnemyTeam = EnemyTeam;
         List<CombatAction> actions;
-        LiveLog.Log(UI.StartBattle);
+        LiveLog.Log(GameConfig.Instance.Data.UI.StartBattle);
         UpdateEntitiesList();
         Round = 1;
         while (EnemyTeam!.Members.Count != 0 && HeroTeam!.Members.Count != 0)
         {
-            LiveLog.Log(String.Format(UI.Round, Round));
+            LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.Round, Round));
             UiManager.ListTeam(HeroTeam);
             actions = GetTeamActions(HeroTeam.Members);
             actions.AddRange(EnemyAi.GetEnemyActions(EnemyTeam, HeroTeam, _allEntities));
             actions.Sort();
-            LogRegister.ActionData.Add(String.Format(UI.GenDivider, String.Format(UI.Log, Round)));
+            LogRegister.ActionData.Add(String.Format(GameConfig.Instance.Data.UI.GenDivider, String.Format(GameConfig.Instance.Data.UI.Log, Round)));
             ExecuteActions(actions);
             UpdateEntitiesList();
             Round++;
         }
-        string winMsg = HeroTeam!.Members.Count != 0 ? Messages.HeroWin : Messages.EnemyWin; 
+        string winMsg = HeroTeam!.Members.Count != 0 ? GameConfig.Instance.Data.Messages.HeroWin : GameConfig.Instance.Data.Messages.EnemyWin; 
         LiveLog.Log(winMsg);
         LogRegister.SaveCombatSession(_initalHeroTeam, _initialEnemyTeam, winMsg);
         WriteOntoCsv();
@@ -144,7 +144,7 @@ public class CombatEngine
         foreach (var member in HeroTeam!.Members)
         {
             member.Hp = member.MaxHp;
-            member.DefenseBuff = KeyValues.DefDefense;
+            member.DefenseBuff = GameConfig.Instance.Data.KeyValues.DefDefense;
         }
     }
 
@@ -168,8 +168,8 @@ public class CombatEngine
         {
             Hero currentHero = (Hero)heroTeam[i];
             UiManager.ListTeam(EnemyTeam);
-            LiveLog.Log(String.Format(UI.ActionList, currentHero.Name) + (i == 0 ? "" : UI.GoBackMember));
-            int actionChoiceRaw = rand.Next(KeyValues.ActionMinNumber, KeyValues.ActionMaxNumber);
+            LiveLog.Log(String.Format(GameConfig.Instance.Data.UI.ActionList, currentHero.Name) + (i == 0 ? "" : GameConfig.Instance.Data.UI.GoBackMember));
+            int actionChoiceRaw = rand.Next(GameConfig.Instance.Data.KeyValues.ActionMinNumber, GameConfig.Instance.Data.KeyValues.ActionMaxNumber);
             ECombatAction actionChoice = (ECombatAction)actionChoiceRaw; 
             
             if (actionChoice != ECombatAction.GoBack)
@@ -177,7 +177,7 @@ public class CombatEngine
                 CombatAction? pendingAction = ManageAction(currentHero, actionChoice);
                 if (pendingAction == null)
                 {
-                    LiveLog.Log(Messages.NoFounds);
+                    LiveLog.Log(GameConfig.Instance.Data.Messages.NoFounds);
                 }
                 else
                 {
@@ -266,12 +266,12 @@ public class CombatEngine
                 Entity currentUser = entry.SelectedUser;
                 if (currentUser.IsDefeated)
                 {
-                    LiveLog.Log(String.Format(Messages.DeadAbility, currentUser.Name));
+                    LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.DeadAbility, currentUser.Name));
                     continue;
                 }
                 if (entry.Target is Entity targetEntity && targetEntity.IsDefeated && entry.ActionType == ECombatAction.Attack)
                 {
-                    LiveLog.Log(Messages.Failed);
+                    LiveLog.Log(GameConfig.Instance.Data.Messages.Failed);
                     continue;
                 }
 
@@ -287,7 +287,7 @@ public class CombatEngine
                         currentUser.AttackMeth((Entity)entry.Target!);
                         break;
                     case ECombatAction.Introduce:
-                        LiveLog.Log(String.Format(Messages.Introduce, currentUser.Name));
+                        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Introduce, currentUser.Name));
                         LiveLog.Log(currentUser.ToString());
                         break;
                     case ECombatAction.Ability:
@@ -297,13 +297,13 @@ public class CombatEngine
                         }
                         else
                         {
-                            LiveLog.Log(Messages.CantUseAbility);
+                            LiveLog.Log(GameConfig.Instance.Data.Messages.CantUseAbility);
                         }
                         break;
                 }
 
             
-                LogRegister.ActionData.Add(String.Format(UI.EntityAction, currentUser.GetType().Name, currentUser.Name, entry.ActionType, StatCalculator.LastDamagePoint));
+                LogRegister.ActionData.Add(String.Format(GameConfig.Instance.Data.UI.EntityAction, currentUser.GetType().Name, currentUser.Name, entry.ActionType, StatCalculator.LastDamagePoint));
         }
     }
 }

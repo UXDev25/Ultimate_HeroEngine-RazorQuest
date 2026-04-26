@@ -25,25 +25,25 @@ public class Warrior : Hero
         Armor = armor;
         BattleCry = battleCry;
     }
-    public Warrior(string name, int level) : this(name, level, KeyValues.DefWarriorHp, KeyValues.DefWarriorSkill, KeyValues.DefDefense, new List<Ability>(), KeyValues.DefWarriorArmor, KeyValues.MichaelCry) { }
+    public Warrior(string name, int level) : this(name, level, GameConfig.Instance.Data.KeyValues.DefWarriorHp, GameConfig.Instance.Data.KeyValues.DefWarriorSkill, GameConfig.Instance.Data.KeyValues.DefDefense, new List<Ability>(), GameConfig.Instance.Data.KeyValues.DefWarriorArmor, GameConfig.Instance.Data.KeyValues.MichaelCry) { }
     
     public override string ToString()
     {
-        return base.ToString() + (KeyValues.WarriorIntroduce, Armor, BattleCry);
+        return base.ToString() + (GameConfig.Instance.Data.KeyValues.WarriorIntroduce, Armor, BattleCry);
     }
 
     public override void ReceiveDamage(float damage)
     {
         float actualDamage = damage - (1 + (DefenseBuff / 10)) - (DefenseBuff / 10) * (Armor / 100);
-        actualDamage = Math.Max(KeyValues.MinDefaultDamage, actualDamage);
+        actualDamage = Math.Max(GameConfig.Instance.Data.KeyValues.MinDefaultDamage, actualDamage);
         Hp -= actualDamage;
-        LiveLog.Log(String.Format(Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Recieved, GetType().Name.ToUpper(), Name, actualDamage, Hp, MaxHp));
     }
     
     public override void LevelUp()
     {
-        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.LevelUp, GetType().Name, Name));
         base.LevelUp();
-        Armor += KeyValues.DefArmorIncrease;
+        Armor += GameConfig.Instance.Data.KeyValues.DefArmorIncrease;
     }
 }

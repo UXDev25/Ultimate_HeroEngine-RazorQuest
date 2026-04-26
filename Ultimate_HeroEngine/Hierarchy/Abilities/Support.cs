@@ -21,17 +21,17 @@ public class Support : Ability
         switch (Effect)
         {
             case EEffect.Cheer: 
-                LiveLog.Log(String.Format(Messages.Cheer, target!.Name));
+                LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.Cheer, target!.Name));
                 break;
             case EEffect.InstaKill:
-                LiveLog.Log(String.Format(Messages.InstaKill, target!.Name));
+                LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.InstaKill, target!.Name));
                 target.Hp = 0;
                 break;
             case EEffect.TellFacts:
-                LiveLog.Log(Messages.Fact);
+                LiveLog.Log(GameConfig.Instance.Data.Messages.Fact);
                 break;
             default: 
-                LiveLog.Log(Messages.Nothing);
+                LiveLog.Log(GameConfig.Instance.Data.Messages.Nothing);
                 break;
         }
     }

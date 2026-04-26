@@ -26,16 +26,16 @@ public class Elite : Enemy, IUseAbility
         Mana = mana;
     }
     
-    public override string ToString() => base.ToString() + String.Format(KeyValues.EliteIntroduce, Mana);
+    public override string ToString() => base.ToString() + String.Format(GameConfig.Instance.Data.KeyValues.EliteIntroduce, Mana);
     
     
     //**Abilities
     public void UseAbility(int abilityIndex, ITargetable? target)
     {
-        if (target is Entity ent) LiveLog.Log(String.Format(Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name));
+        if (target is Entity ent) LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.UseAbility, ent.GetType().Name, Name, Abilities[abilityIndex].Name));
         if (target is Team team)
         {
-            LiveLog.Log(String.Format(Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name));
+            LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.UseAbility, team.Members.GetType().Name, Name, Abilities[abilityIndex].Name));
             foreach (var member in team.Members)
             {
                 Abilities[abilityIndex].Execute(member);
@@ -52,6 +52,6 @@ public class Elite : Enemy, IUseAbility
     public override void LevelUp()
     {
         base.LevelUp();
-        Mana += KeyValues.DefManaIncrease;
+        Mana += GameConfig.Instance.Data.KeyValues.DefManaIncrease;
     }
 }

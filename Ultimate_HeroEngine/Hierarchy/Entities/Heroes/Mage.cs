@@ -25,17 +25,17 @@ public class Mage : Hero
         ArkLvl = arkLvl;
     }
     
-    public Mage(string name, int level) : this(name, level, KeyValues.DefMageHp, KeyValues.DefMageSkill, KeyValues.DefDefense, new List<Ability>(), KeyValues.DefMageMana, KeyValues.DefMageArk) { }
+    public Mage(string name, int level) : this(name, level, GameConfig.Instance.Data.KeyValues.DefMageHp, GameConfig.Instance.Data.KeyValues.DefMageSkill, GameConfig.Instance.Data.KeyValues.DefDefense, new List<Ability>(), GameConfig.Instance.Data.KeyValues.DefMageMana, GameConfig.Instance.Data.KeyValues.DefMageArk) { }
     
-    public override string ToString() => base.ToString() + String.Format(KeyValues.MageIntroduce, Mana, ArkLvl);
+    public override string ToString() => base.ToString() + String.Format(GameConfig.Instance.Data.KeyValues.MageIntroduce, Mana, ArkLvl);
     
     public override void LevelUp()
     {
-        LiveLog.Log(String.Format(Messages.LevelUp, GetType().Name, Name));
+        LiveLog.Log(String.Format(GameConfig.Instance.Data.Messages.LevelUp, GetType().Name, Name));
         base.LevelUp();
-        Mana += KeyValues.DefManaIncrease;
-        ArkLvl += KeyValues.DefArkLvlIncrease;
+        Mana += GameConfig.Instance.Data.KeyValues.DefManaIncrease;
+        ArkLvl += GameConfig.Instance.Data.KeyValues.DefArkLvlIncrease;
     }
     
-    public override string GetAbilityCostValue() => KeyValues.MageAbilityCost;
+    public override string GetAbilityCostValue() => GameConfig.Instance.Data.KeyValues.MageAbilityCost;
 }
