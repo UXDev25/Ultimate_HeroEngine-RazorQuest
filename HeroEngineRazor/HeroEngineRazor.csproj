@@ -14,4 +14,8 @@
       <Folder Include="Files\Writers\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Files\" />
+    </ItemGroup>
+
 </Project>
