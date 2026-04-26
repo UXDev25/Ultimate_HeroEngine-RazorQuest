@@ -34,14 +34,14 @@ public abstract class Entity : IAttack, ITargetable
                 return;
             }
             _hp = value < 0 ? 0 : value;
-            _isDefeated = _hp <= 0;
-            if (_isDefeated) Defeated();
+            IsDefeated = _hp <= 0;
+            if (IsDefeated) Defeated();
         }
     }
     public float MaxHp { get; set; }
     public float Skill { get; set; }
     public float DefenseBuff { get; set; }
-    public bool IsDefeated { get => _isDefeated; }
+    public bool IsDefeated { get; set;}
 
     public Entity() { }
     

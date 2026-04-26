@@ -202,3 +202,1292 @@ BATTLE LOG - Round 3
 RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
 
 
+==================================================
+COMBAT DATE: 2026-04-26 21:29:13
+HEROES: 
+ENEMIES: Elite Guard
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 0
+[Warrior]  Nigga > Ability > 0
+[Warrior]  Balatro > Ability > 89909,9
+[Minion]  Cave Bat > Introduce > 89909,9
+[Elite]  Elite Guard > Ability > 89909,9
+[Elite]  Elite Guard > Attack > 89909,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 89909,9
+[Warrior]  Nigga > Ability > 89909,9
+[Warrior]  Balatro > Attack > 89909,9
+[Elite]  Elite Guard > Introduce > 89909,9
+[Elite]  Elite Guard > Attack > 89909,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 79759,7
+[Warrior]  Nigga > Introduce > 79759,7
+[Warrior]  Balatro > Ability > 79759,7
+[Elite]  Elite Guard > Ability > 79759,7
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:39:52
+HEROES: Balatro, Nigga, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 0
+[Warrior]  Nigga > Attack > 3499,9
+[Warrior]  Balatro > Attack > 3599,7
+[Minion]  Cave Bat > Introduce > 3599,7
+[Elite]  Elite Guard > Attack > 3599,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3199,9
+[Warrior]  Nigga > Introduce > 3199,9
+[Warrior]  Balatro > Introduce > 3199,9
+[Elite]  Elite Guard > Ability > 3199,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3199,7
+[Warrior]  Nigga > Introduce > 3199,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:39:52
+HEROES: Balatro, Nigga, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3299,9
+[Warrior]  Nigga > Ability > 3299,9
+[Warrior]  Balatro > Ability > 3299,9
+[Minion]  Little Goblin > Introduce > 3299,9
+[Elite]  Shadow Assassin > Introduce > 3299,9
+[Elite]  Armored Golem > Ability > 3299,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Ability > 3299,9
+[Warrior]  Nigga > Attack > 3599,9
+[Warrior]  Balatro > Introduce > 3599,9
+[Elite]  Shadow Assassin > Attack > 3599,9
+[Elite]  Armored Golem > Attack > 3599,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Ability > 3599,9
+[Warrior]  Nigga > Attack > 3599,7
+[Warrior]  Balatro > Introduce > 3599,7
+[Elite]  Shadow Assassin > Attack > 3599,7
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3299,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:39:52
+HEROES: Balatro, Nigga, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3299,7
+[Warrior]  Nigga > Introduce > 3299,7
+[Warrior]  Balatro > Introduce > 3299,7
+[Elite]  Armored Golem > Introduce > 3299,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3299,7
+[Warrior]  Nigga > Attack > 3699,7
+[Warrior]  Balatro > Ability > 3799,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:39:52
+HEROES: 
+ENEMIES: Cave Bat, Orc Warlord
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3799,7
+[Warrior]  Nigga > Attack > 3799,9
+[Warrior]  Balatro > Ability > 3899,7
+[Elite]  Orc Warlord > Ability > 3899,7
+[Minion]  Cave Bat > Attack > 3899,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3899,7
+[Warrior]  Nigga > Ability > 3899,7
+[Warrior]  Balatro > Ability > 3899,7
+[Elite]  Orc Warlord > Ability > 3899,7
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Balatro, Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3899,7
+[Warrior]  Nigga > Introduce > 3899,7
+[Warrior]  Balatro > Ability > 3899,7
+[Minion]  Skeleton Warrior > Attack > 3899,7
+[Elite]  Armored Golem > Attack > 3899,7
+[Elite]  Elite Guard > Introduce > 3899,7
+[Minion]  Skeleton Warrior > Introduce > 3899,7
+[Rogue]  Michael > Ability > 5379,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Ability > 5379,7
+[Warrior]  Nigga > Introduce > 5379,7
+[Warrior]  Balatro > Introduce > 5379,7
+[Minion]  Skeleton Warrior > Attack > 5379,7
+[Elite]  Armored Golem > Introduce > 5379,7
+[Minion]  Skeleton Warrior > Attack > 1
+[Rogue]  Michael > Ability > 5379,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3499,7
+[Warrior]  Nigga > Introduce > 3499,7
+[Warrior]  Balatro > Ability > 3499,7
+[Minion]  Skeleton Warrior > Attack > 1
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Ability > 1
+[Warrior]  Nigga > Ability > 3799,9
+[Warrior]  Balatro > Ability > 3799,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Balatro, Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3799,9
+[Warrior]  Nigga > Attack > 3899,9
+[Warrior]  Balatro > Ability > 3899,9
+[Minion]  Bandit Scout > Attack > 3899,9
+[Elite]  Elite Guard > Attack > 146,16669
+[Elite]  Orc Warlord > Introduce > 146,16669
+[Rogue]  Michael > Attack > 8274,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3599,7
+[Warrior]  Nigga > Ability > 3599,7
+[Minion]  Bandit Scout > Attack > 3599,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 3599,7
+[Warrior]  Nigga > Introduce > 3599,7
+[Warrior]  Balatro > Attack > 3999,9
+[Rogue]  Michael > Introduce > 3999,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Balatro, Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3999,9
+[Warrior]  Nigga > Introduce > 3999,9
+[Warrior]  Balatro > Introduce > 3999,9
+[Minion]  Little Goblin > Attack > 3999,9
+[Rogue]  Michael > Introduce > 3999,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Ability > 3999,9
+[Warrior]  Nigga > Ability > 3999,9
+[Warrior]  Balatro > Ability > 4099,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 4099,9
+[Warrior]  Nigga > Ability > 4099,9
+[Warrior]  Balatro > Introduce > 4099,9
+[Minion]  Little Goblin > Attack > 4099,9
+[Elite]  Armored Golem > Introduce > 4099,9
+[Elite]  Armored Golem > Attack > 1
+[Elite]  Dark Cultist > Attack > 1
+[Rogue]  Michael > Attack > 8690,1
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3799,9
+[Warrior]  Nigga > Introduce > 3799,9
+[Elite]  Armored Golem > Introduce > 3799,9
+[Elite]  Armored Golem > Ability > 3799,9
+[Rogue]  Michael > Attack > 8690,1
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Ability > 8690,1
+[Warrior]  Nigga > Attack > 4099,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3899,7
+[Warrior]  Nigga > Introduce > 3899,7
+[Minion]  Bandit Scout > Attack > 3899,7
+[Elite]  Dark Cultist > Introduce > 3899,7
+[Elite]  Orc Warlord > Attack > 3899,7
+[Rogue]  Michael > Introduce > 3899,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3899,9
+[Elite]  Dark Cultist > Attack > 479,5
+[Elite]  Orc Warlord > Ability > 479,5
+[Rogue]  Michael > Introduce > 479,5
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 479,5
+[Warrior]  Nigga > Introduce > 479,5
+[Minion]  Slime > Attack > 479,5
+[Rogue]  Michael > Ability > 479,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 479,5
+[Warrior]  Nigga > Introduce > 479,5
+[Minion]  Slime > Attack > 479,5
+[Rogue]  Michael > Attack > 9113,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4099,9
+[Warrior]  Nigga > Introduce > 4099,9
+[Minion]  Slime > Attack > 119,5
+[Elite]  Armored Golem > Ability > 119,5
+[Elite]  Dark Cultist > Ability > 119,5
+[Rogue]  Michael > Introduce > 119,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 3971,9
+[Warrior]  Nigga > Attack > 4271,7
+[Elite]  Dark Cultist > Attack > 4271,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 4271,7
+[Warrior]  Nigga > Ability > 4271,7
+[Elite]  Dark Cultist > Introduce > 4271,7
+[Rogue]  Michael > Attack > 9200,5
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 9200,5
+[Warrior]  Nigga > Attack > 4499,7
+[Elite]  Elite Guard > Attack > 4499,7
+[Minion]  Skeleton Warrior > Attack > 4499,7
+[Minion]  Little Goblin > Attack > 4499,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 4499,7
+[Warrior]  Nigga > Ability > 4499,7
+[Elite]  Elite Guard > Ability > 4499,7
+[Minion]  Skeleton Warrior > Attack > 4499,7
+[Minion]  Little Goblin > Attack > 4499,7
+[Rogue]  Michael > Introduce > 4499,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 4499,7
+[Warrior]  Nigga > Ability > 4499,7
+[Elite]  Elite Guard > Introduce > 4499,7
+[Minion]  Skeleton Warrior > Attack > 4499,7
+[Minion]  Little Goblin > Attack > 4499,7
+[Rogue]  Michael > Introduce > 4499,7
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4199,9
+[Warrior]  Nigga > Introduce > 4199,9
+[Elite]  Elite Guard > Ability > 4199,9
+[Minion]  Little Goblin > Attack > 119,5
+[Rogue]  Michael > Introduce > 119,5
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 119,5
+[Warrior]  Nigga > Introduce > 119,5
+[Elite]  Elite Guard > Introduce > 119,5
+[Minion]  Little Goblin > Attack > 119,5
+[Rogue]  Michael > Attack > 9497,3
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Michael > Ability > 9497,3
+[Warrior]  Nigga > Ability > 9497,3
+[Minion]  Little Goblin > Attack > 9497,3
+[Rogue]  Michael > Introduce > 9497,3
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 9497,3
+[Warrior]  Nigga > Introduce > 9497,3
+[Minion]  Little Goblin > Introduce > 9497,3
+[Rogue]  Michael > Attack > 9497,5
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 9497,5
+[Warrior]  Nigga > Introduce > 9497,5
+[BugBoss]  Ancient Dragon > Ability > 9497,5
+[Elite]  Orc Warlord > Introduce > 9497,5
+[Rogue]  Michael > Attack > 9497,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4299,7
+[Warrior]  Nigga > Ability > 4299,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4399,7
+[Warrior]  Nigga > Introduce > 4399,7
+[Minion]  Slime > Attack > 119,5
+[Elite]  Elite Guard > Attack > 119,5
+[Minion]  Bandit Scout > Attack > 119,5
+[Rogue]  Michael > Introduce > 119,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4399,9
+[Warrior]  Nigga > Attack > 4699,9
+[Elite]  Elite Guard > Introduce > 4699,9
+[Rogue]  Michael > Introduce > 4699,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 4699,9
+[Warrior]  Nigga > Ability > 4699,9
+[Elite]  Elite Guard > Introduce > 4699,9
+[Rogue]  Michael > Attack > 9984,899
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 9984,899
+[Warrior]  Nigga > Ability > 4799,7
+[Elite]  Armored Golem > Introduce > 4799,7
+[Minion]  Skeleton Warrior > Attack > 4799,7
+[Minion]  Little Goblin > Attack > 4799,7
+[Rogue]  Michael > Introduce > 4799,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4499,7
+[Warrior]  Nigga > Introduce > 4499,7
+[Minion]  Skeleton Warrior > Attack > 4499,7
+[Minion]  Little Goblin > Attack > 4499,7
+[Rogue]  Michael > Ability > 4499,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4499,9
+[Warrior]  Nigga > Ability > 4499,9
+[Minion]  Little Goblin > Attack > 1
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 1
+[Warrior]  Nigga > Attack > 4799,9
+[Rogue]  Michael > Introduce > 4799,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 4799,9
+[Warrior]  Nigga > Attack > 4799,9
+[Elite]  Dark Cultist > Introduce > 4799,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4599,7
+[Warrior]  Nigga > Introduce > 4599,7
+[Rogue]  Michael > Introduce > 4599,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 4599,7
+[Warrior]  Nigga > Ability > 4599,7
+[Elite]  Elite Guard > Attack > 4599,7
+[Elite]  Orc Warlord > Introduce > 4599,7
+[Minion]  Bandit Scout > Introduce > 4599,7
+[Elite]  Dark Cultist > Introduce > 4599,7
+[Rogue]  Michael > Introduce > 4599,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Ability > 4599,7
+[Warrior]  Nigga > Introduce > 4599,7
+[Elite]  Elite Guard > Introduce > 4599,7
+[Elite]  Orc Warlord > Attack > 4599,7
+[Minion]  Bandit Scout > Introduce > 4599,7
+[Elite]  Dark Cultist > Attack > 4599,7
+[Rogue]  Michael > Introduce > 4599,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4699,7
+[Warrior]  Nigga > Introduce > 4699,7
+[Elite]  Orc Warlord > Attack > 479,5
+[Minion]  Bandit Scout > Attack > 119,5
+[Elite]  Dark Cultist > Introduce > 119,5
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4699,7
+[Warrior]  Nigga > Introduce > 4699,7
+[Minion]  Bandit Scout > Attack > 4699,7
+[Elite]  Dark Cultist > Ability > 4699,7
+[Rogue]  Michael > Attack > 10659,5
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Michael > Ability > 10659,5
+[Warrior]  Nigga > Ability > 10659,5
+[Elite]  Dark Cultist > Ability > 10659,5
+[Rogue]  Michael > Attack > 10659,3
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 10659,3
+[Warrior]  Nigga > Attack > 5099,9
+[Elite]  Armored Golem > Attack > 5099,9
+[Minion]  Cave Bat > Introduce > 5099,9
+[Minion]  Skeleton Warrior > Attack > 5099,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 5099,9
+[Warrior]  Nigga > Attack > 5099,9
+[Elite]  Armored Golem > Ability > 5099,9
+[Minion]  Cave Bat > Introduce > 5099,9
+[Rogue]  Michael > Introduce > 5099,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 5099,9
+[Warrior]  Nigga > Introduce > 5099,9
+[Elite]  Armored Golem > Ability > 5099,9
+[Minion]  Cave Bat > Attack > 5099,9
+[Rogue]  Michael > Attack > 10888,3
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Ability > 10888,3
+[Warrior]  Nigga > Introduce > 10888,3
+[Elite]  Armored Golem > Ability > 479,5
+[Rogue]  Michael > Attack > 10812,1
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 10812,1
+[Warrior]  Nigga > Ability > 10812,1
+[BugBoss]  Arachnid Queen > Ability > 599,5
+[Minion]  Bandit Scout > Attack > 119,5
+[Rogue]  Michael > Attack > 119,5
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4899,9
+[Warrior]  Nigga > Introduce > 4899,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Ability > 4899,9
+[Warrior]  Nigga > Attack > 5299,7
+[Minion]  Cave Bat > Attack > 5299,7
+[Elite]  Shadow Assassin > Introduce > 5299,7
+[Elite]  Orc Warlord > Introduce > 5299,7
+[Rogue]  Michael > Attack > 11351,699
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 11351,699
+[Warrior]  Nigga > Attack > 5299,9
+[Elite]  Orc Warlord > Introduce > 5299,9
+[Rogue]  Michael > Introduce > 5299,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Ability > 5299,9
+[Warrior]  Nigga > Introduce > 5299,9
+[Elite]  Orc Warlord > Ability > 5299,9
+[Rogue]  Michael > Ability > 5299,9
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Michael > Ability > 5299,9
+[Warrior]  Nigga > Introduce > 5299,9
+[Elite]  Orc Warlord > Introduce > 5299,9
+[Rogue]  Michael > Introduce > 5299,9
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Michael > Attack > 4999,7
+[Warrior]  Nigga > Introduce > 4999,7
+[Rogue]  Michael > Introduce > 4999,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga, Michael
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Michael > Attack > 5099,9
+[Warrior]  Nigga > Ability > 5099,9
+[Minion]  Skeleton Warrior > Introduce > 5099,9
+[Elite]  Dark Cultist > Attack > 5099,9
+[Minion]  Skeleton Warrior > Attack > 5099,9
+[Rogue]  Michael > Introduce > 5099,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Michael > Introduce > 5099,9
+[Warrior]  Nigga > Introduce > 5099,9
+[Minion]  Skeleton Warrior > Attack > 5099,9
+[Elite]  Dark Cultist > Ability > 5099,9
+[Minion]  Skeleton Warrior > Introduce > 5099,9
+[Rogue]  Michael > Introduce > 5099,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Michael > Ability > 5099,9
+[Warrior]  Nigga > Introduce > 5099,9
+[Minion]  Skeleton Warrior > Attack > 5099,9
+[Elite]  Dark Cultist > Ability > 5099,9
+[Minion]  Skeleton Warrior > Introduce > 5099,9
+[Rogue]  Michael > Attack > 11586,499
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 11586,499
+[Minion]  Skeleton Warrior > Attack > 11586,499
+[Minion]  Skeleton Warrior > Introduce > 11586,499
+[Rogue]  Michael > Introduce > 11586,499
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 11586,499
+[Minion]  Skeleton Warrior > Attack > 119,5
+[Minion]  Skeleton Warrior > Introduce > 119,5
+[Rogue]  Michael > Attack > 11586,699
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 11586,699
+[Minion]  Skeleton Warrior > Attack > 11586,699
+[Rogue]  Michael > Introduce > 11586,699
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5399,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5399,9
+[BugBoss]  Ancient Dragon > Introduce > 5399,9
+[Elite]  Elite Guard > Introduce > 5399,9
+[Rogue]  Michael > Introduce > 5399,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5399,9
+[Elite]  Elite Guard > Attack > 479,5
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 479,5
+[Elite]  Elite Guard > Attack > 479,5
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 479,5
+[Elite]  Elite Guard > Attack > 479,5
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5499,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5499,7
+[Minion]  Slime > Attack > 5499,7
+[Minion]  Slime > Attack > 5499,7
+[Minion]  Slime > Attack > 5499,7
+[Elite]  Shadow Assassin > Attack > 5499,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 5599,9
+[Minion]  Slime > Introduce > 5599,9
+[Minion]  Slime > Attack > 5599,9
+[Elite]  Shadow Assassin > Introduce > 5599,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5599,9
+[Minion]  Slime > Attack > 5599,9
+[Elite]  Shadow Assassin > Attack > 5599,9
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5599,9
+[Minion]  Slime > Attack > 5599,9
+[Elite]  Shadow Assassin > Introduce > 5599,9
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 5599,9
+[Minion]  Slime > Introduce > 5599,9
+[Elite]  Shadow Assassin > Introduce > 5599,9
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5599,9
+[Elite]  Shadow Assassin > Ability > 5599,9
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5599,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 5599,7
+[Elite]  Orc Warlord > Introduce > 5599,7
+[Minion]  Little Goblin > Introduce > 5599,7
+[Elite]  Elite Guard > Introduce > 5599,7
+[Minion]  Cave Bat > Introduce > 5599,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5599,7
+[Elite]  Orc Warlord > Introduce > 5599,7
+[Minion]  Little Goblin > Attack > 5599,7
+[Elite]  Elite Guard > Ability > 5599,7
+[Minion]  Cave Bat > Attack > 5599,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5599,7
+[Elite]  Orc Warlord > Attack > 5599,7
+[Minion]  Little Goblin > Attack > 5599,7
+[Elite]  Elite Guard > Attack > 5599,7
+[Minion]  Cave Bat > Attack > 5599,7
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 5599,7
+[Elite]  Orc Warlord > Attack > 5599,7
+[Minion]  Little Goblin > Attack > 5599,7
+[Elite]  Elite Guard > Introduce > 5599,7
+[Minion]  Cave Bat > Introduce > 5599,7
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5599,7
+[Elite]  Orc Warlord > Ability > 5599,7
+[Minion]  Little Goblin > Attack > 5599,7
+[Elite]  Elite Guard > Introduce > 5599,7
+[Minion]  Cave Bat > Attack > 5599,7
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5599,7
+[Elite]  Orc Warlord > Introduce > 5599,7
+[Minion]  Little Goblin > Introduce > 5599,7
+[Elite]  Elite Guard > Attack > 5599,7
+[Minion]  Cave Bat > Attack > 5599,7
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5599,7
+[Elite]  Orc Warlord > Introduce > 5599,7
+[Minion]  Little Goblin > Introduce > 5599,7
+[Elite]  Elite Guard > Ability > 5599,7
+[Minion]  Cave Bat > Introduce > 5599,7
+==================================================
+BATTLE LOG - Round 8
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5699,7
+[Minion]  Little Goblin > Attack > 5699,7
+[Elite]  Elite Guard > Attack > 5699,7
+[Minion]  Cave Bat > Attack > 5699,7
+==================================================
+BATTLE LOG - Round 9
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,7
+[Minion]  Little Goblin > Attack > 5699,7
+[Elite]  Elite Guard > Attack > 5699,7
+[Minion]  Cave Bat > Attack > 5699,7
+==================================================
+BATTLE LOG - Round 10
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5699,9
+[Minion]  Little Goblin > Attack > 5699,9
+[Elite]  Elite Guard > Attack > 5699,9
+==================================================
+BATTLE LOG - Round 11
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,9
+[Minion]  Little Goblin > Attack > 5699,9
+[Elite]  Elite Guard > Introduce > 5699,9
+==================================================
+BATTLE LOG - Round 12
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,9
+[Minion]  Little Goblin > Attack > 5699,9
+[Elite]  Elite Guard > Introduce > 5699,9
+==================================================
+BATTLE LOG - Round 13
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,9
+[Minion]  Little Goblin > Attack > 5699,9
+[Elite]  Elite Guard > Introduce > 5699,9
+==================================================
+BATTLE LOG - Round 14
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,9
+[Minion]  Little Goblin > Introduce > 5699,9
+[Elite]  Elite Guard > Attack > 5699,9
+==================================================
+BATTLE LOG - Round 15
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,9
+[Minion]  Little Goblin > Introduce > 5699,9
+[Elite]  Elite Guard > Introduce > 5699,9
+==================================================
+BATTLE LOG - Round 16
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5699,7
+[Minion]  Little Goblin > Attack > 5699,7
+==================================================
+BATTLE LOG - Round 17
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,7
+[Minion]  Little Goblin > Introduce > 5699,7
+==================================================
+BATTLE LOG - Round 18
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5699,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5699,9
+[Elite]  Elite Guard > Ability > 5699,9
+[BugBoss]  Scary Monster > Attack > 5699,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5699,9
+[Elite]  Elite Guard > Ability > 5699,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 5899,9
+[Minion]  Bandit Scout > Attack > 5899,9
+[Elite]  Orc Warlord > Ability > 5899,9
+[Elite]  Dark Cultist > Introduce > 5899,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5899,7
+[Minion]  Bandit Scout > Introduce > 5899,7
+[Elite]  Dark Cultist > Ability > 5899,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5899,9
+[Elite]  Dark Cultist > Introduce > 5899,9
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5899,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5999,9
+[Elite]  Armored Golem > Introduce > 5999,9
+[Minion]  Bandit Scout > Attack > 5999,9
+[Elite]  Orc Warlord > Ability > 5999,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5999,9
+[Elite]  Armored Golem > Ability > 5999,9
+[Minion]  Bandit Scout > Introduce > 5999,9
+[Elite]  Orc Warlord > Ability > 5999,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5999,9
+[Elite]  Armored Golem > Ability > 5999,9
+[Minion]  Bandit Scout > Attack > 5999,9
+[Elite]  Orc Warlord > Attack > 5999,9
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5891,9
+[Elite]  Armored Golem > Attack > 5891,9
+[Elite]  Orc Warlord > Ability > 5891,9
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5919,7
+[Elite]  Orc Warlord > Ability > 5919,7
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 5919,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 5919,7
+[Minion]  Bandit Scout > Introduce > 5919,7
+[BugBoss]  King of the Undead > Ability > 5919,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 5919,7
+[Minion]  Bandit Scout > Attack > 5919,7
+[Elite]  Orc Warlord > Attack > 5919,7
+[Elite]  Elite Guard > Ability > 5919,7
+[Minion]  Rabid Wolf > Attack > 5919,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6199,9
+[Elite]  Orc Warlord > Introduce > 6199,9
+[Elite]  Elite Guard > Ability > 6199,9
+[Minion]  Rabid Wolf > Introduce > 6199,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6151,7
+[Elite]  Orc Warlord > Introduce > 6151,7
+[Minion]  Rabid Wolf > Introduce > 6151,7
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6151,7
+[Elite]  Orc Warlord > Attack > 6151,7
+[Minion]  Rabid Wolf > Introduce > 6151,7
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6151,7
+[Elite]  Orc Warlord > Introduce > 6151,7
+[Minion]  Rabid Wolf > Attack > 6151,7
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6151,7
+[Minion]  Rabid Wolf > Introduce > 6151,7
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6151,7
+[Minion]  Rabid Wolf > Attack > 6151,7
+==================================================
+BATTLE LOG - Round 8
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6151,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6151,9
+[Elite]  Orc Warlord > Ability > 6151,9
+[Elite]  Dark Cultist > Ability > 6151,9
+[Elite]  Armored Golem > Attack > 6151,9
+[Minion]  Little Goblin > Attack > 6151,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6299,7
+[Elite]  Dark Cultist > Introduce > 6299,7
+[Elite]  Armored Golem > Introduce > 6299,7
+[Minion]  Little Goblin > Introduce > 6299,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6299,7
+[Elite]  Dark Cultist > Introduce > 6299,7
+[Elite]  Armored Golem > Attack > 6299,7
+[Minion]  Little Goblin > Introduce > 6299,7
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6299,7
+[Elite]  Dark Cultist > Introduce > 6299,7
+[Elite]  Armored Golem > Attack > 6299,7
+[Minion]  Little Goblin > Attack > 6299,7
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6299,9
+[Elite]  Dark Cultist > Introduce > 6299,9
+[Elite]  Armored Golem > Attack > 6299,9
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6299,9
+[Elite]  Dark Cultist > Attack > 6299,9
+[Elite]  Armored Golem > Attack > 6299,9
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6299,7
+[Elite]  Armored Golem > Attack > 6299,7
+==================================================
+BATTLE LOG - Round 8
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6299,7
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6299,7
+[Minion]  Slime > Attack > 6299,7
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 6299,7
+[Minion]  Slime > Attack > 6299,7
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6399,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: Nigga
+ENEMIES: 
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6499,9
+[Minion]  Skeleton Warrior > Attack > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+[Minion]  Rabid Wolf > Introduce > 6499,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6499,9
+[Minion]  Skeleton Warrior > Introduce > 6499,9
+[Minion]  Rabid Wolf > Introduce > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+==================================================
+BATTLE LOG - Round 3
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+[Minion]  Rabid Wolf > Introduce > 6499,9
+==================================================
+BATTLE LOG - Round 4
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+==================================================
+BATTLE LOG - Round 5
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6499,9
+[Minion]  Rabid Wolf > Introduce > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+==================================================
+BATTLE LOG - Round 6
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6499,9
+[Minion]  Rabid Wolf > Attack > 6499,9
+==================================================
+BATTLE LOG - Round 7
+--------------------------------------------------
+[Warrior]  Nigga > Attack > 6499,9
+--------------------------------------------------
+RESULT: All enemies were defeated, the HERO team wins, congratulations!
+
+
+==================================================
+COMBAT DATE: 2026-04-26 21:40:26
+HEROES: 
+ENEMIES: Dark Cultist, Little Goblin, Skeleton Warrior, Bandit Scout
+--------------------------------------------------
+==================================================
+BATTLE LOG - Round 1
+--------------------------------------------------
+[Warrior]  Nigga > Ability > 6499,9
+[Minion]  Skeleton Warrior > Attack > 6499,9
+[Elite]  Dark Cultist > Introduce > 6499,9
+[Minion]  Little Goblin > Attack > 6499,9
+[Minion]  Bandit Scout > Attack > 6499,9
+==================================================
+BATTLE LOG - Round 2
+--------------------------------------------------
+[Warrior]  Nigga > Introduce > 6499,9
+[Minion]  Skeleton Warrior > Introduce > 6499,9
+[Elite]  Dark Cultist > Ability > 6499,9
+--------------------------------------------------
+RESULT: All heroes were defeated... the ENEMY team wins... What a shame :(
+
+

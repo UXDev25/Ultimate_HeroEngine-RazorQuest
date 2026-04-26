@@ -45,6 +45,7 @@ public static class MenuManager
                 battle.HeroTeam.Members.ForEach(member => member.Hp = member.MaxHp);
                 isGameOver = battle.StartBattle();
             }
+            HeroStorage.HeroTeamList.ResetDefeatedMembers();
         }
         catch (ArgumentOutOfRangeException)
         {

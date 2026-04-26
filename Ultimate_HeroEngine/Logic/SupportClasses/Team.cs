@@ -30,4 +30,11 @@ public class Team : ITargetable
         DefeatedMembers.AddRange(Members.Where(member => member.IsDefeated));
         Members.RemoveAll(member => member.IsDefeated);
     }
+
+    public void ResetDefeatedMembers()
+    {
+        DefeatedMembers.ForEach(member => member.IsDefeated = false);
+        Members.AddRange(DefeatedMembers);
+        DefeatedMembers.Clear();
+    }
 }
